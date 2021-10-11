@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_BoQrUCp4EeyXVNg0kfeznA" entityName="PortSystem">
+  <assemblyContexts__ComposedStructure id="_j2rccCp4EeyXVNg0kfeznA" entityName="Assembly_CustomSystem">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="portSystem.repository#_jCppYCp2EeyXVNg0kfeznA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_8QhVICp4EeyXVNg0kfeznA" entityName="Assembly_ShippingLineSystem&#xA;">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="portSystem.repository#_hEDOsCp2EeyXVNg0kfeznA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_YKx5MCp8EeyQUZAfFpKaVQ" entityName="Assembly_PortCommunicationSystem">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="portSystem.repository#_fA2n4Cp2EeyXVNg0kfeznA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_e51LICp8EeyQUZAfFpKaVQ" entityName="Assembly_TerminalSystem">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="portSystem.repository#_mO90YCp2EeyXVNg0kfeznA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_ofv8gCp8EeyQUZAfFpKaVQ" entityName="Assembly_PortAuthoritySystem">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="portSystem.repository#_nu9ngCp2EeyXVNg0kfeznA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_FuWHMCqJEeyQUZAfFpKaVQ" entityName="Assembly_ExporterSystem">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="portSystem.repository#_poXZICp2EeyXVNg0kfeznA"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_o1yawCp4EeyXVNg0kfeznA" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_FfgpsCp4EeyXVNg0kfeznA" assemblyContext_ProvidedDelegationConnector="_j2rccCp4EeyXVNg0kfeznA">
+    <innerProvidedRole_ProvidedDelegationConnector href="portSystem.repository#_PIADYCp3EeyXVNg0kfeznA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="__ppNECp4EeyXVNg0kfeznA" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_65Wt4Cp4EeyXVNg0kfeznA" assemblyContext_ProvidedDelegationConnector="_8QhVICp4EeyXVNg0kfeznA">
+    <innerProvidedRole_ProvidedDelegationConnector href="portSystem.repository#_ybBsICp3EeyXVNg0kfeznA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_eUaJ4Cp8EeyQUZAfFpKaVQ" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_Tu9OICp8EeyQUZAfFpKaVQ" assemblyContext_ProvidedDelegationConnector="_YKx5MCp8EeyQUZAfFpKaVQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="portSystem.repository#_mBXD8Cp7EeyQUZAfFpKaVQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_nwzL0Cp8EeyQUZAfFpKaVQ" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_YKx5MCp8EeyQUZAfFpKaVQ" providingAssemblyContext_AssemblyConnector="_e51LICp8EeyQUZAfFpKaVQ">
+    <providedRole_AssemblyConnector href="portSystem.repository#_retdcCp7EeyQUZAfFpKaVQ"/>
+    <requiredRole_AssemblyConnector href="portSystem.repository#_oXTAkCp7EeyQUZAfFpKaVQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_rCJAwCp8EeyQUZAfFpKaVQ" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_YKx5MCp8EeyQUZAfFpKaVQ" providingAssemblyContext_AssemblyConnector="_ofv8gCp8EeyQUZAfFpKaVQ">
+    <providedRole_AssemblyConnector href="portSystem.repository#_tXIXoCp7EeyQUZAfFpKaVQ"/>
+    <requiredRole_AssemblyConnector href="portSystem.repository#_p8mxgCp7EeyQUZAfFpKaVQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_gSnz8CqFEeyQUZAfFpKaVQ" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_YKx5MCp8EeyQUZAfFpKaVQ" providingAssemblyContext_AssemblyConnector="_j2rccCp4EeyXVNg0kfeznA">
+    <providedRole_AssemblyConnector href="portSystem.repository#_PIADYCp3EeyXVNg0kfeznA"/>
+    <requiredRole_AssemblyConnector href="portSystem.repository#_3EUKcCqCEeyQUZAfFpKaVQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_icNWoCqFEeyQUZAfFpKaVQ" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_YKx5MCp8EeyQUZAfFpKaVQ" providingAssemblyContext_AssemblyConnector="_8QhVICp4EeyXVNg0kfeznA">
+    <providedRole_AssemblyConnector href="portSystem.repository#_ybBsICp3EeyXVNg0kfeznA"/>
+    <requiredRole_AssemblyConnector href="portSystem.repository#_lc4HwCqEEeyQUZAfFpKaVQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_JR8JwCqJEeyQUZAfFpKaVQ" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_Hb2x4CqJEeyQUZAfFpKaVQ" assemblyContext_ProvidedDelegationConnector="_FuWHMCqJEeyQUZAfFpKaVQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="portSystem.repository#_tuGaQCqIEeyQUZAfFpKaVQ"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_FfgpsCp4EeyXVNg0kfeznA" entityName="CustomProvidedRole">
+    <providedInterface__OperationProvidedRole href="portSystem.repository#_sXYkICp2EeyXVNg0kfeznA"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_65Wt4Cp4EeyXVNg0kfeznA" entityName="ShippingLineProvidedRole">
+    <providedInterface__OperationProvidedRole href="portSystem.repository#_Ql2hcCp3EeyXVNg0kfeznA"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Tu9OICp8EeyQUZAfFpKaVQ" entityName="PortCommunicationProvidedRole">
+    <providedInterface__OperationProvidedRole href="portSystem.repository#_Z3LQ8Cp5EeyXVNg0kfeznA"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Hb2x4CqJEeyQUZAfFpKaVQ" entityName="ExporterProvidedRole">
+    <providedInterface__OperationProvidedRole href="portSystem.repository#_1J22oCqHEeyQUZAfFpKaVQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

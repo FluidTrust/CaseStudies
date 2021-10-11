@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_cmuu0Cp2EeyXVNg0kfeznA" entityName="PortRepository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_fA2n4Cp2EeyXVNg0kfeznA" entityName="PortCommunicationSystem">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_mBXD8Cp7EeyQUZAfFpKaVQ" entityName="PortCommunicationSystem.PortCommunication.OperationProvidedRole1" providedInterface__OperationProvidedRole="_Z3LQ8Cp5EeyXVNg0kfeznA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_oXTAkCp7EeyQUZAfFpKaVQ" entityName="PortCommunicationSystem.Terminal.OperationRequiredRole1" requiredInterface__OperationRequiredRole="_emJhgCp5EeyXVNg0kfeznA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_p8mxgCp7EeyQUZAfFpKaVQ" entityName="PortCommunicationSystem.PortAuthority.OperationRequiredRole2" requiredInterface__OperationRequiredRole="_UdC4oCp7EeyQUZAfFpKaVQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_3EUKcCqCEeyQUZAfFpKaVQ" entityName="PortCommunicationSystem.Custom.OperationRequiredRole3" requiredInterface__OperationRequiredRole="_sXYkICp2EeyXVNg0kfeznA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_lc4HwCqEEeyQUZAfFpKaVQ" entityName="PortCommunicationSystem.ShippingLine.OperationRequiredRole4" requiredInterface__OperationRequiredRole="_Ql2hcCp3EeyXVNg0kfeznA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_mB4BUCp7EeyQUZAfFpKaVQ" describedService__SEFF="_Toa9wCp7EeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_mB4oYCp7EeyQUZAfFpKaVQ" successor_AbstractAction="_vZ4SgCp7EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_mB4oYSp7EeyQUZAfFpKaVQ" predecessor_AbstractAction="_zOM4sCp7EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_vZ4SgCp7EeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_mB4oYCp7EeyQUZAfFpKaVQ" successor_AbstractAction="_wwm04Cp7EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_wwm04Cp7EeyQUZAfFpKaVQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_vZ4SgCp7EeyQUZAfFpKaVQ" successor_AbstractAction="_zOM4sCp7EeyQUZAfFpKaVQ" calledService_ExternalService="_R5kPQCp7EeyQUZAfFpKaVQ" role_ExternalService="_oXTAkCp7EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="_zOM4sCp7EeyQUZAfFpKaVQ" entityName="BranchAction1" predecessor_AbstractAction="_wwm04Cp7EeyQUZAfFpKaVQ" successor_AbstractAction="_mB4oYSp7EeyQUZAfFpKaVQ">
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_3Ak-ICp7EeyQUZAfFpKaVQ" entityName="GuardedBranchTransition1">
+          <branchBehaviour_BranchTransition id="_3AnaYCp7EeyQUZAfFpKaVQ">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_3AoBcCp7EeyQUZAfFpKaVQ" successor_AbstractAction="_63lr8Cp7EeyQUZAfFpKaVQ"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_3AoBcSp7EeyQUZAfFpKaVQ" predecessor_AbstractAction="_63lr8Cp7EeyQUZAfFpKaVQ"/>
+            <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_63lr8Cp7EeyQUZAfFpKaVQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_3AoBcCp7EeyQUZAfFpKaVQ" successor_AbstractAction="_3AoBcSp7EeyQUZAfFpKaVQ" calledService_ExternalService="_VMsz8Cp7EeyQUZAfFpKaVQ" role_ExternalService="_p8mxgCp7EeyQUZAfFpKaVQ"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="true"/>
+        </branches_Branch>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_HOHHQCp9EeyQUZAfFpKaVQ" describedService__SEFF="_DpfJ8Cp9EeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_HsYXoCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_39dLMCp9EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_HsYXoSp9EeyQUZAfFpKaVQ" predecessor_AbstractAction="_38DDsCqCEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_39dLMCp9EeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_HsYXoCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_677HcCp9EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="_677HcCp9EeyQUZAfFpKaVQ" entityName="BranchAction1" predecessor_AbstractAction="_39dLMCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_38DDsCqCEeyQUZAfFpKaVQ">
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_9N9bgCp9EeyQUZAfFpKaVQ" entityName="GuardedBranchTransition1">
+          <branchBehaviour_BranchTransition id="_9N-CkCp9EeyQUZAfFpKaVQ">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_9N-poCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_9N-poSp9EeyQUZAfFpKaVQ" predecessor_AbstractAction="_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
+            <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_-_Ez0Cp9EeyQUZAfFpKaVQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_9N-poCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_9N-poSp9EeyQUZAfFpKaVQ" calledService_ExternalService="_Fds5kCp9EeyQUZAfFpKaVQ" role_ExternalService="_p8mxgCp7EeyQUZAfFpKaVQ"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="true"/>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_38DDsCqCEeyQUZAfFpKaVQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_677HcCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_HsYXoSp9EeyQUZAfFpKaVQ" calledService_ExternalService="_5gaO4CqBEeyQUZAfFpKaVQ" role_ExternalService="_3EUKcCqCEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_V60IECqEEeyQUZAfFpKaVQ" describedService__SEFF="_Sw_F0CqDEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_WqX8wCqEEeyQUZAfFpKaVQ" successor_AbstractAction="_a-NwgCqEEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_WqX8wSqEEeyQUZAfFpKaVQ" predecessor_AbstractAction="_44iPMCqEEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_a-NwgCqEEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_WqX8wCqEEeyQUZAfFpKaVQ" successor_AbstractAction="_7NdfMCqEEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_44iPMCqEEeyQUZAfFpKaVQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_7NdfMCqEEeyQUZAfFpKaVQ" successor_AbstractAction="_WqX8wSqEEeyQUZAfFpKaVQ" calledService_ExternalService="_l0CDgCqEEeyQUZAfFpKaVQ" role_ExternalService="_lc4HwCqEEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_7NdfMCqEEeyQUZAfFpKaVQ" entityName="ExternalCallAction2" predecessor_AbstractAction="_a-NwgCqEEeyQUZAfFpKaVQ" successor_AbstractAction="_44iPMCqEEeyQUZAfFpKaVQ" calledService_ExternalService="_pFhpcCqEEeyQUZAfFpKaVQ" role_ExternalService="_oXTAkCp7EeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_XxCp4CqEEeyQUZAfFpKaVQ" describedService__SEFF="_UPxYACqDEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_Yt8XACqEEeyQUZAfFpKaVQ" successor_AbstractAction="_S-vjECqFEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Yt8XASqEEeyQUZAfFpKaVQ" predecessor_AbstractAction="_F1zW4CqFEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_F1zW4CqFEeyQUZAfFpKaVQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_HRtUMCqFEeyQUZAfFpKaVQ" successor_AbstractAction="_Yt8XASqEEeyQUZAfFpKaVQ" calledService_ExternalService="_mrpoACqEEeyQUZAfFpKaVQ" role_ExternalService="_lc4HwCqEEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_HRtUMCqFEeyQUZAfFpKaVQ" entityName="ExternalCallAction2" predecessor_AbstractAction="_S-vjECqFEeyQUZAfFpKaVQ" successor_AbstractAction="_F1zW4CqFEeyQUZAfFpKaVQ" calledService_ExternalService="_pVnT4CqEEeyQUZAfFpKaVQ" role_ExternalService="_oXTAkCp7EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_S-vjECqFEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_Yt8XACqEEeyQUZAfFpKaVQ" successor_AbstractAction="_HRtUMCqFEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_5pguQCqGEeyQUZAfFpKaVQ" describedService__SEFF="_10pyACqFEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_6Hd1kCqGEeyQUZAfFpKaVQ" successor_AbstractAction="_9lliQCqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_6Hd1kSqGEeyQUZAfFpKaVQ" predecessor_AbstractAction="_cMOUYCqHEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_9lliQCqGEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_6Hd1kCqGEeyQUZAfFpKaVQ" successor_AbstractAction="__ot3oCqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="__ot3oCqGEeyQUZAfFpKaVQ" entityName="DangerousGood" predecessor_AbstractAction="_9lliQCqGEeyQUZAfFpKaVQ" successor_AbstractAction="_cMOUYCqHEeyQUZAfFpKaVQ">
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_A4bzECqHEeyQUZAfFpKaVQ" entityName="GuardedBranchTransition1">
+          <branchBehaviour_BranchTransition id="_A4bzESqHEeyQUZAfFpKaVQ">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_A4caICqHEeyQUZAfFpKaVQ" successor_AbstractAction="_Csz6wCqHEeyQUZAfFpKaVQ"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_A4caISqHEeyQUZAfFpKaVQ" predecessor_AbstractAction="_Csz6wCqHEeyQUZAfFpKaVQ"/>
+            <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_Csz6wCqHEeyQUZAfFpKaVQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_A4caICqHEeyQUZAfFpKaVQ" successor_AbstractAction="_A4caISqHEeyQUZAfFpKaVQ" calledService_ExternalService="_ne8bQCqGEeyQUZAfFpKaVQ" role_ExternalService="_p8mxgCp7EeyQUZAfFpKaVQ"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="true"/>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_cMOUYCqHEeyQUZAfFpKaVQ" entityName="ExternalCallAction1" predecessor_AbstractAction="__ot3oCqGEeyQUZAfFpKaVQ" successor_AbstractAction="_6Hd1kSqGEeyQUZAfFpKaVQ" calledService_ExternalService="_U4IbsCqHEeyQUZAfFpKaVQ" role_ExternalService="_3EUKcCqCEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_ZH5LQCqIEeyQUZAfFpKaVQ" describedService__SEFF="_9phxoCqHEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_adRp0CqIEeyQUZAfFpKaVQ" successor_AbstractAction="_ct0wICqIEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_adRp0SqIEeyQUZAfFpKaVQ" predecessor_AbstractAction="_ct0wICqIEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_ct0wICqIEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_adRp0CqIEeyQUZAfFpKaVQ" successor_AbstractAction="_adRp0SqIEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_hM3HQCqIEeyQUZAfFpKaVQ" describedService__SEFF="_6TAhwCqHEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_idGnICqIEeyQUZAfFpKaVQ" successor_AbstractAction="_j1vOACqIEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_idGnISqIEeyQUZAfFpKaVQ" predecessor_AbstractAction="_j1vOACqIEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_j1vOACqIEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_idGnICqIEeyQUZAfFpKaVQ" successor_AbstractAction="_idGnISqIEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_hEDOsCp2EeyXVNg0kfeznA" entityName="ShippingLineSystem&#xA;">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_ybBsICp3EeyXVNg0kfeznA" entityName="ShippingLineSystem&#xA;.Interface2.OperationProvidedRole1" providedInterface__OperationProvidedRole="_Ql2hcCp3EeyXVNg0kfeznA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_ybzvQCp3EeyXVNg0kfeznA" describedService__SEFF="_RXahQCp3EeyXVNg0kfeznA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_yb0WUCp3EeyXVNg0kfeznA" successor_AbstractAction="_3k360Cp3EeyXVNg0kfeznA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_yb0WUSp3EeyXVNg0kfeznA" predecessor_AbstractAction="_3k360Cp3EeyXVNg0kfeznA"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_3k360Cp3EeyXVNg0kfeznA" entityName="processTransportOrder" predecessor_AbstractAction="_yb0WUCp3EeyXVNg0kfeznA" successor_AbstractAction="_yb0WUSp3EeyXVNg0kfeznA"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_JBty4Cp9EeyQUZAfFpKaVQ" describedService__SEFF="_BfpvoCp9EeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_Je1zwCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_ASdKcCqCEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Je2a0Cp9EeyQUZAfFpKaVQ" predecessor_AbstractAction="_ASdKcCqCEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_ASdKcCqCEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_Je1zwCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_Je2a0Cp9EeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_4Z-1gCqFEeyQUZAfFpKaVQ" describedService__SEFF="_0QYi4CqFEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_5FIrUCqFEeyQUZAfFpKaVQ" successor_AbstractAction="_L1NfICqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_5FJSYCqFEeyQUZAfFpKaVQ" predecessor_AbstractAction="_L1NfICqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_L1NfICqGEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_5FIrUCqFEeyQUZAfFpKaVQ" successor_AbstractAction="_5FJSYCqFEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_HVi14CqGEeyQUZAfFpKaVQ" describedService__SEFF="_l0CDgCqEEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_IYF4ACqGEeyQUZAfFpKaVQ" successor_AbstractAction="_PN6gUCqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_IYF4ASqGEeyQUZAfFpKaVQ" predecessor_AbstractAction="_PN6gUCqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_PN6gUCqGEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_IYF4ACqGEeyQUZAfFpKaVQ" successor_AbstractAction="_IYF4ASqGEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_JWR-kCqGEeyQUZAfFpKaVQ" describedService__SEFF="_mrpoACqEEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_J8zMACqGEeyQUZAfFpKaVQ" successor_AbstractAction="_UGtbQCqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_J8zMASqGEeyQUZAfFpKaVQ" predecessor_AbstractAction="_UGtbQCqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_UGtbQCqGEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_J8zMACqGEeyQUZAfFpKaVQ" successor_AbstractAction="_J8zMASqGEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_TzTsMCqIEeyQUZAfFpKaVQ" describedService__SEFF="__VBqICqHEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_UqqK8CqIEeyQUZAfFpKaVQ" successor_AbstractAction="_VTzOkCqIEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_UqqyACqIEeyQUZAfFpKaVQ" predecessor_AbstractAction="_VTzOkCqIEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_VTzOkCqIEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_UqqK8CqIEeyQUZAfFpKaVQ" successor_AbstractAction="_UqqyACqIEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_jCppYCp2EeyXVNg0kfeznA" entityName="CustomSystem">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_PIADYCp3EeyXVNg0kfeznA" entityName="CustomSystem.OperationProvidedRole" providedInterface__OperationProvidedRole="_sXYkICp2EeyXVNg0kfeznA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_PIrY0Cp3EeyXVNg0kfeznA" describedService__SEFF="_t8uKQCp2EeyXVNg0kfeznA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_PIr_4Cp3EeyXVNg0kfeznA" successor_AbstractAction="_l43zICp3EeyXVNg0kfeznA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_PIr_4Sp3EeyXVNg0kfeznA" predecessor_AbstractAction="_l43zICp3EeyXVNg0kfeznA"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_l43zICp3EeyXVNg0kfeznA" entityName="checkData" predecessor_AbstractAction="_PIr_4Cp3EeyXVNg0kfeznA" successor_AbstractAction="_PIr_4Sp3EeyXVNg0kfeznA"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_mO90YCp2EeyXVNg0kfeznA" entityName="TerminalSystem">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_retdcCp7EeyQUZAfFpKaVQ" entityName="TerminalSystem.Terminal.OperationProvidedRole1" providedInterface__OperationProvidedRole="_emJhgCp5EeyXVNg0kfeznA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_revSoCp7EeyQUZAfFpKaVQ" describedService__SEFF="_R5kPQCp7EeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_revSoSp7EeyQUZAfFpKaVQ" successor_AbstractAction="_LL6PACp8EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_rev5sCp7EeyQUZAfFpKaVQ" predecessor_AbstractAction="_LL6PACp8EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_LL6PACp8EeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_revSoSp7EeyQUZAfFpKaVQ" successor_AbstractAction="_rev5sCp7EeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_7uYlgCqFEeyQUZAfFpKaVQ" describedService__SEFF="_pFhpcCqEEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_8IUIcCqFEeyQUZAfFpKaVQ" successor_AbstractAction="_-YUcMCqFEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_8IUIcSqFEeyQUZAfFpKaVQ" predecessor_AbstractAction="_-YUcMCqFEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_-YUcMCqFEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_8IUIcCqFEeyQUZAfFpKaVQ" successor_AbstractAction="_8IUIcSqFEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_BOYDUCqGEeyQUZAfFpKaVQ" describedService__SEFF="_pVnT4CqEEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_B_3xsCqGEeyQUZAfFpKaVQ" successor_AbstractAction="_DUKrICqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_B_3xsSqGEeyQUZAfFpKaVQ" predecessor_AbstractAction="_DUKrICqGEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_DUKrICqGEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_B_3xsCqGEeyQUZAfFpKaVQ" successor_AbstractAction="_B_3xsSqGEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_nu9ngCp2EeyXVNg0kfeznA" entityName="PortAuthoritySystem">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_tXIXoCp7EeyQUZAfFpKaVQ" entityName="PortAuthoritySystem.PortAuthority.OperationProvidedRole1" providedInterface__OperationProvidedRole="_UdC4oCp7EeyQUZAfFpKaVQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_tXNQICp7EeyQUZAfFpKaVQ" describedService__SEFF="_VMsz8Cp7EeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_tXN3MCp7EeyQUZAfFpKaVQ" successor_AbstractAction="_PwwTMCp8EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_tXOeQCp7EeyQUZAfFpKaVQ" predecessor_AbstractAction="_PwwTMCp8EeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_PwwTMCp8EeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_tXN3MCp7EeyQUZAfFpKaVQ" successor_AbstractAction="_tXOeQCp7EeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_KEv9MCp9EeyQUZAfFpKaVQ" describedService__SEFF="_Fds5kCp9EeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_KpmWsCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_7Mk1wCqBEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Kpm9wCp9EeyQUZAfFpKaVQ" predecessor_AbstractAction="_7Mk1wCqBEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_7Mk1wCqBEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_KpmWsCp9EeyQUZAfFpKaVQ" successor_AbstractAction="_Kpm9wCp9EeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_4uP_4CqGEeyQUZAfFpKaVQ" describedService__SEFF="_ne8bQCqGEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_5IFcMCqGEeyQUZAfFpKaVQ" successor_AbstractAction="_MOkk4CqHEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_5IFcMSqGEeyQUZAfFpKaVQ" predecessor_AbstractAction="_MOkk4CqHEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_MOkk4CqHEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_5IFcMCqGEeyQUZAfFpKaVQ" successor_AbstractAction="_5IFcMSqGEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_poXZICp2EeyXVNg0kfeznA" entityName="ExporterSystem">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_tuGaQCqIEeyQUZAfFpKaVQ" entityName="ExporterSystem.Exporter.OperationProvidedRole1" providedInterface__OperationProvidedRole="_1J22oCqHEeyQUZAfFpKaVQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_tu4dYCqIEeyQUZAfFpKaVQ" describedService__SEFF="_2tKccCqHEeyQUZAfFpKaVQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_tu5EcCqIEeyQUZAfFpKaVQ" successor_AbstractAction="_0G69gCqIEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_tu5EcSqIEeyQUZAfFpKaVQ" predecessor_AbstractAction="_0G69gCqIEeyQUZAfFpKaVQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_0G69gCqIEeyQUZAfFpKaVQ" entityName="processData" predecessor_AbstractAction="_tu5EcCqIEeyQUZAfFpKaVQ" successor_AbstractAction="_tu5EcSqIEeyQUZAfFpKaVQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_sXYkICp2EeyXVNg0kfeznA" entityName="Custom">
+    <signatures__OperationInterface id="_t8uKQCp2EeyXVNg0kfeznA" entityName="declareGoods">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_5gaO4CqBEeyQUZAfFpKaVQ" entityName="presentCustoms">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_U4IbsCqHEeyQUZAfFpKaVQ" entityName="allLoaded">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_Ql2hcCp3EeyXVNg0kfeznA" entityName="ShippingLine">
+    <signatures__OperationInterface id="_RXahQCp3EeyXVNg0kfeznA" entityName="send_transport_order">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_BfpvoCp9EeyQUZAfFpKaVQ" entityName="gateIn">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_l0CDgCqEEeyQUZAfFpKaVQ" entityName="inspection">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_mrpoACqEEeyQUZAfFpKaVQ" entityName="clearance">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_0QYi4CqFEeyQUZAfFpKaVQ" entityName="onVesel">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="__VBqICqHEeyQUZAfFpKaVQ" entityName="vesselReady">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_Z3LQ8Cp5EeyXVNg0kfeznA" entityName="PortCommunication">
+    <signatures__OperationInterface id="_Toa9wCp7EeyQUZAfFpKaVQ" entityName="portOrder">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_DpfJ8Cp9EeyQUZAfFpKaVQ" entityName="gateIn">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_Sw_F0CqDEeyQUZAfFpKaVQ" entityName="inspection">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_UPxYACqDEeyQUZAfFpKaVQ" entityName="clearance">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_10pyACqFEeyQUZAfFpKaVQ" entityName="onVesel">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_6TAhwCqHEeyQUZAfFpKaVQ" entityName="completedCustoms">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_9phxoCqHEeyQUZAfFpKaVQ" entityName="vesselReady">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_emJhgCp5EeyXVNg0kfeznA" entityName="Terminal">
+    <signatures__OperationInterface id="_R5kPQCp7EeyQUZAfFpKaVQ" entityName="portOrder">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_pFhpcCqEEeyQUZAfFpKaVQ" entityName="inspection">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_pVnT4CqEEeyQUZAfFpKaVQ" entityName="clearance">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_UdC4oCp7EeyQUZAfFpKaVQ" entityName="PortAuthority">
+    <signatures__OperationInterface id="_VMsz8Cp7EeyQUZAfFpKaVQ" entityName="portOrder">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_Fds5kCp9EeyQUZAfFpKaVQ" entityName="gateIn">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_ne8bQCqGEeyQUZAfFpKaVQ" entityName="onVesel">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_1J22oCqHEeyQUZAfFpKaVQ" entityName="Exporter">
+    <signatures__OperationInterface id="_2tKccCqHEeyQUZAfFpKaVQ" entityName="completedCustoms">
+      <parameters__OperationSignature parameterName="value">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="description">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="destination">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="kind">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="amount">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="dangerous">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="container_attributes">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="VGM">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="mrn">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+</repository:Repository>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ASCII"?>
+<usagemodel:UsageModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2">
+  <usageScenario_UsageModel id="_urpa4Cp4EeyXVNg0kfeznA" entityName="Exporter Goods">
+    <scenarioBehaviour_UsageScenario id="_vrypQCp4EeyXVNg0kfeznA" entityName="ScenarioBehaviour">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_vrzQUCp4EeyXVNg0kfeznA" successor="_2811ACp4EeyXVNg0kfeznA"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_vrz3YCp4EeyXVNg0kfeznA" predecessor="_GIvXcCp5EeyXVNg0kfeznA"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_2811ACp4EeyXVNg0kfeznA" entityName="EntryLevelSystemCall1" successor="_GIvXcCp5EeyXVNg0kfeznA" predecessor="_vrzQUCp4EeyXVNg0kfeznA">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_FfgpsCp4EeyXVNg0kfeznA"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_t8uKQCp2EeyXVNg0kfeznA"/>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_GIvXcCp5EeyXVNg0kfeznA" entityName="EntryLevelSystemCall2" successor="_vrz3YCp4EeyXVNg0kfeznA" predecessor="_2811ACp4EeyXVNg0kfeznA">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_65Wt4Cp4EeyXVNg0kfeznA"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_RXahQCp3EeyXVNg0kfeznA"/>
+      </actions_ScenarioBehaviour>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload" population="1">
+      <thinkTime_ClosedWorkload specification="0.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_ssJrgCp8EeyQUZAfFpKaVQ" entityName="ShippingLine Order">
+    <scenarioBehaviour_UsageScenario id="_xMwI4Cp8EeyQUZAfFpKaVQ" entityName="ScenarioBehaviour">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_xMwv8Cp8EeyQUZAfFpKaVQ" successor="_0zFWYCp8EeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_xMxXACp8EeyQUZAfFpKaVQ" predecessor="_0zFWYCp8EeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_0zFWYCp8EeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall1" successor="_xMxXACp8EeyQUZAfFpKaVQ" predecessor="_xMwv8Cp8EeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_Tu9OICp8EeyQUZAfFpKaVQ"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_Toa9wCp7EeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload">
+      <thinkTime_ClosedWorkload specification="0.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_ENLTkCqCEeyQUZAfFpKaVQ" entityName="Container Arriving Terminal">
+    <scenarioBehaviour_UsageScenario id="_INUIMCqCEeyQUZAfFpKaVQ" entityName="ScenarioBehaviour">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_INUvQCqCEeyQUZAfFpKaVQ" successor="_NhfXkCqCEeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_INUvQSqCEeyQUZAfFpKaVQ" predecessor="_QxBOoCqCEeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_NhfXkCqCEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall1" successor="_QxBOoCqCEeyQUZAfFpKaVQ" predecessor="_INUvQCqCEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_Tu9OICp8EeyQUZAfFpKaVQ"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_DpfJ8Cp9EeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_QxBOoCqCEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall2" successor="_INUvQSqCEeyQUZAfFpKaVQ" predecessor="_NhfXkCqCEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_65Wt4Cp4EeyXVNg0kfeznA"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_BfpvoCp9EeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload">
+      <thinkTime_ClosedWorkload specification="0.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_E06MgCqDEeyQUZAfFpKaVQ" entityName="Custom">
+    <scenarioBehaviour_UsageScenario id="_HlQ0QCqDEeyQUZAfFpKaVQ" entityName="ScenarioBehaviour">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_HlQ0QSqDEeyQUZAfFpKaVQ" successor="_KAECwCqDEeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_HlQ0QiqDEeyQUZAfFpKaVQ" predecessor="_eDc4kCqDEeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Branch" id="_KAECwCqDEeyQUZAfFpKaVQ" entityName="Inpection" successor="_eDc4kCqDEeyQUZAfFpKaVQ" predecessor="_HlQ0QSqDEeyQUZAfFpKaVQ">
+        <branchTransitions_Branch>
+          <branchedBehaviour_BranchTransition id="_MHUDICqDEeyQUZAfFpKaVQ">
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_MHUDISqDEeyQUZAfFpKaVQ" successor="_m1eu4CqDEeyQUZAfFpKaVQ"/>
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_MHUDIiqDEeyQUZAfFpKaVQ" predecessor="_m1eu4CqDEeyQUZAfFpKaVQ"/>
+            <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_m1eu4CqDEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall1" successor="_MHUDIiqDEeyQUZAfFpKaVQ" predecessor="_MHUDISqDEeyQUZAfFpKaVQ">
+              <providedRole_EntryLevelSystemCall href="portSystem.system#_Tu9OICp8EeyQUZAfFpKaVQ"/>
+              <operationSignature__EntryLevelSystemCall href="portSystem.repository#_Sw_F0CqDEeyQUZAfFpKaVQ"/>
+            </actions_ScenarioBehaviour>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_eDc4kCqDEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall1" successor="_HlQ0QiqDEeyQUZAfFpKaVQ" predecessor="_KAECwCqDEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_Tu9OICp8EeyQUZAfFpKaVQ"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_UPxYACqDEeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload">
+      <thinkTime_ClosedWorkload specification="0.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_g184kCqHEeyQUZAfFpKaVQ" entityName="LoadGoods">
+    <scenarioBehaviour_UsageScenario id="_lWlyMCqHEeyQUZAfFpKaVQ" entityName="ScenarioBehaviour">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_lWlyMSqHEeyQUZAfFpKaVQ" successor="_nCCAUCqHEeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_lWlyMiqHEeyQUZAfFpKaVQ" predecessor="_qLlLMCqHEeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_nCCAUCqHEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall1" successor="_qLlLMCqHEeyQUZAfFpKaVQ" predecessor="_lWlyMSqHEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_Tu9OICp8EeyQUZAfFpKaVQ"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_10pyACqFEeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_qLlLMCqHEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall2" successor="_lWlyMiqHEeyQUZAfFpKaVQ" predecessor="_nCCAUCqHEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_65Wt4Cp4EeyXVNg0kfeznA"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_0QYi4CqFEeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload">
+      <thinkTime_ClosedWorkload specification="0.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_5tkc8CqIEeyQUZAfFpKaVQ" entityName="CustomProcesFinished">
+    <scenarioBehaviour_UsageScenario id="_-ws_oCqIEeyQUZAfFpKaVQ" entityName="ScenarioBehaviour">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_-ws_oSqIEeyQUZAfFpKaVQ" successor="_AzXa8CqJEeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_-ws_oiqIEeyQUZAfFpKaVQ" predecessor="_N7AmoCqJEeyQUZAfFpKaVQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_AzXa8CqJEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall1" successor="_LzPB0CqJEeyQUZAfFpKaVQ" predecessor="_-ws_oSqIEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_Tu9OICp8EeyQUZAfFpKaVQ"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_6TAhwCqHEeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_LzPB0CqJEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall2" successor="_RUGCUCqJEeyQUZAfFpKaVQ" predecessor="_AzXa8CqJEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_Hb2x4CqJEeyQUZAfFpKaVQ"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_2tKccCqHEeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_N7AmoCqJEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall3" successor="_-ws_oiqIEeyQUZAfFpKaVQ" predecessor="_RUGCUCqJEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_65Wt4Cp4EeyXVNg0kfeznA"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#__VBqICqHEeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_RUGCUCqJEeyQUZAfFpKaVQ" entityName="EntryLevelSystemCall4" successor="_N7AmoCqJEeyQUZAfFpKaVQ" predecessor="_LzPB0CqJEeyQUZAfFpKaVQ">
+        <providedRole_EntryLevelSystemCall href="portSystem.system#_Tu9OICp8EeyQUZAfFpKaVQ"/>
+        <operationSignature__EntryLevelSystemCall href="portSystem.repository#_9phxoCqHEeyQUZAfFpKaVQ"/>
+      </actions_ScenarioBehaviour>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload">
+      <thinkTime_ClosedWorkload specification="0.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+</usagemodel:UsageModel>
