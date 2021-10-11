@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_CLzbQCqOEeyQUZAfFpKaVQ" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="portHardware.resourceenvironment#/"/>
+  <system_Allocation href="portSystem.system#_BoQrUCp4EeyXVNg0kfeznA"/>
+  <allocationContexts_Allocation id="_JEMPYCqOEeyQUZAfFpKaVQ" entityName="Allocation_Assembly_ShippingLineSystem&#xA;">
+    <resourceContainer_AllocationContext href="portHardware.resourceenvironment#_p-rI4CqNEeyQUZAfFpKaVQ"/>
+    <assemblyContext_AllocationContext href="portSystem.system#_8QhVICp4EeyXVNg0kfeznA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_JzoIQCqOEeyQUZAfFpKaVQ" entityName="Allocation_Assembly_PortCommunicationSystem">
+    <resourceContainer_AllocationContext href="portHardware.resourceenvironment#_uPjIMCqNEeyQUZAfFpKaVQ"/>
+    <assemblyContext_AllocationContext href="portSystem.system#_YKx5MCp8EeyQUZAfFpKaVQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_KNVowCqOEeyQUZAfFpKaVQ" entityName="Allocation_Assembly_CustomSystem">
+    <resourceContainer_AllocationContext href="portHardware.resourceenvironment#_tHR4kCqNEeyQUZAfFpKaVQ"/>
+    <assemblyContext_AllocationContext href="portSystem.system#_j2rccCp4EeyXVNg0kfeznA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_KntQkCqOEeyQUZAfFpKaVQ" entityName="Allocation_Assembly_ExporterSystem">
+    <resourceContainer_AllocationContext href="portHardware.resourceenvironment#_2k_JICqNEeyQUZAfFpKaVQ"/>
+    <assemblyContext_AllocationContext href="portSystem.system#_FuWHMCqJEeyQUZAfFpKaVQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_LpXh4CqOEeyQUZAfFpKaVQ" entityName="Allocation_Assembly_TerminalSystem">
+    <resourceContainer_AllocationContext href="portHardware.resourceenvironment#_r_6A0CqNEeyQUZAfFpKaVQ"/>
+    <assemblyContext_AllocationContext href="portSystem.system#_e51LICp8EeyQUZAfFpKaVQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_Mi4j0CqOEeyQUZAfFpKaVQ" entityName="Allocation_Assembly_PortAuthoritySystem">
+    <resourceContainer_AllocationContext href="portHardware.resourceenvironment#_y6hCgCqNEeyQUZAfFpKaVQ"/>
+    <assemblyContext_AllocationContext href="portSystem.system#_ofv8gCp8EeyQUZAfFpKaVQ"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

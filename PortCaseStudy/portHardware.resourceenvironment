@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="New ResourceEnvironment">
+  <linkingResources__ResourceEnvironment id="_8anfwCqNEeyQUZAfFpKaVQ" entityName="LinkingResource1" connectedResourceContainers_LinkingResource="_r_6A0CqNEeyQUZAfFpKaVQ _tHR4kCqNEeyQUZAfFpKaVQ _uPjIMCqNEeyQUZAfFpKaVQ _y6hCgCqNEeyQUZAfFpKaVQ _2k_JICqNEeyQUZAfFpKaVQ _p-rI4CqNEeyQUZAfFpKaVQ">
+    <communicationLinkResourceSpecifications_LinkingResource id="_8aot4CqNEeyQUZAfFpKaVQ">
+      <latency_CommunicationLinkResourceSpecification/>
+      <throughput_CommunicationLinkResourceSpecification/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_p-rI4CqNEeyQUZAfFpKaVQ" entityName="ShippingLineServer"/>
+  <resourceContainer_ResourceEnvironment id="_r_6A0CqNEeyQUZAfFpKaVQ" entityName="TerminalServer"/>
+  <resourceContainer_ResourceEnvironment id="_tHR4kCqNEeyQUZAfFpKaVQ" entityName="CustomServer"/>
+  <resourceContainer_ResourceEnvironment id="_uPjIMCqNEeyQUZAfFpKaVQ" entityName="PortCommunicationServer"/>
+  <resourceContainer_ResourceEnvironment id="_y6hCgCqNEeyQUZAfFpKaVQ" entityName="PortAuthorityServer"/>
+  <resourceContainer_ResourceEnvironment id="_2k_JICqNEeyQUZAfFpKaVQ" entityName="ExporterServer"/>
+</resourceenvironment:ResourceEnvironment>
