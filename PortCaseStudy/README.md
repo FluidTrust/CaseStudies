@@ -11,12 +11,12 @@ The folder contains the different palladio models. For viewing or editing please
 
 ## Structure
 The repository diagram shows the available components and their interfaces
-![Repository](image_exports/new Repository Diagram.svg)
+![Repository](image_exports/newRepositoryDiagram.svg)
 The seffs shows the behaviour of components Here 2 examples can be seen:
-![SEFF-Gatein](image_exports/<PortCommunicationSystem><gateIn> SEFF Diagram.svg)
-![SEFF-PortOrder](image_exports/<PortCommunicationSystem><portOrder> SEFF Diagram.svg)
+![SEFF-Gatein](image_exports/<PortCommunicationSystem><gateIn>SEFFDiagram.svg)
+![SEFF-PortOrder](image_exports/<PortCommunicationSystem><portOrder>SEFFDiagram.svg)
 The assembly diagram shows the instantiated components in the system
-![Assembly](image_exports/new Assembly Diagram.svg)
+![Assembly](image_exports/newAssemblyDiagram.svg)
 
 
 ### Based on extended scenario description
