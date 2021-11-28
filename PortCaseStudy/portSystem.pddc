@@ -1,0 +1,19 @@
+dictionary id "_IcucMEL3EeyrruQ2-rRraw"
+
+enum Roles {
+	Exporter
+	Customs
+	ShippingLine
+	PCS
+	Terminal
+	PortAuthority
+}
+enumCharacteristicType ReadAccess using Roles
+enumCharacteristicType CreateAccess using Roles
+
+behavior Forward {
+	input in
+	output out
+
+	out.*.* := in.*.*
+}
