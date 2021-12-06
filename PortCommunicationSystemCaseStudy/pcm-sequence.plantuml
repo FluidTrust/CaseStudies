@@ -1,0 +1,66 @@
+@startuml Port Communication System
+' !theme plain
+
+->> Exporter : receiveOrder(goods : Item[])
+Exporter -> Customs : declare_goods(goods : Item[])
+Customs --> Exporter : mrn
+note right: send_MRN
+Exporter -> ShippingLine : send_transport_order(mrn, goods : Item[])
+note right #LimeGreen: container: created
+ShippingLine -> PCS : send_port_order(order : Order)
+note left: Order is PortOrder
+PCS ->> Terminal : send_port_order(order : Order)
+Terminal -> Terminal : store(order : Order)
+opt dangerous
+  PCS ->> PortAuthority : send_port_order(order : Order)
+  note right #LightPink: behavior not specified
+end
+PCS --> ShippingLine : portOrderNumber
+ShippingLine --> Exporter
+
+Exporter -> Terminal: deliver(container : Container)
+note right #LimeGreen: container: delivered
+Terminal ->> ShippingLine : send_Gate_in(order : Order, container : Container)
+note left #LightPink: behavior not specified
+Terminal -> PCS : send_Gate_in(order : Order, container : Container)
+opt dangerous
+  PCS ->> PortAuthority : send_Gate_in(order : Order, container : Container)
+  note right #LightPink: behavior not specified
+end
+PCS -> Customs : present_to_customs(order : Order)
+note right: assumption: all containers received
+note left #LimeGreen: container: presented
+opt inspection requested
+  Customs -> PCS : requestInspection(order : Order)
+  note left #LimeGreen: container: locked
+  PCS ->> ShippingLine : inspectionRequested(order : Order)
+  note left #LightPink: behavior not specified
+  PCS -> Terminal : requestInspection(order : Order)
+  Terminal --> PCS : inspectionResult
+  PCS --> Customs : inspectionResult
+end
+' Customs -> PCS : send_clearance(order : Order)
+Customs --> PCS : clearance
+note left #LimeGreen: container: cleared
+PCS ->> ShippingLine : send_clearance(order : Order)
+note left #LightPink: behavior not specified
+' PCS -> Terminal : send_clearance(order : Order)
+PCS --> Terminal : clearance
+
+Terminal ->> ShippingLine : send_On_Vessel(order : order, container : Container)
+note left #LightPink: behavior not specified
+note right #LimeGreen: container: loaded
+Terminal -> PCS : send_On_Vessel(order : order, container : Container)
+opt dangerous
+  PCS ->> PortAuthority : send_On_Vessel(order : Order, container : Container)
+  note right #LightPink: behavior not specified
+end
+PCS -> Customs : send_all_loaded(order : Order)
+Customs --> PCS : true
+note left: send_completion
+PCS --> Terminal : true
+note left: not part of sequence diagram
+Terminal --> Exporter : true
+note right: send_completion
+
+@enduml

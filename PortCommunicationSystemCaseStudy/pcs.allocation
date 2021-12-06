@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_DjpVMFOREeykoYywJC50lQ" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="pcs.resourceenvironment#/"/>
+  <system_Allocation href="pcs.system#_r7WkUFOHEeykhaXsiLsjgQ"/>
+  <allocationContexts_Allocation id="_K5x1QFOREeykoYywJC50lQ" entityName="Allocation_Assembly_Terminal">
+    <resourceContainer_AllocationContext href="pcs.resourceenvironment#_8jSQ0FOQEeykoYywJC50lQ"/>
+    <assemblyContext_AllocationContext href="pcs.system#_NGfTgFOIEeykhaXsiLsjgQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_LO7l4FOREeykoYywJC50lQ" entityName="Allocation_Assembly_ShippingLine">
+    <resourceContainer_AllocationContext href="pcs.resourceenvironment#__6QzsFOQEeykoYywJC50lQ"/>
+    <assemblyContext_AllocationContext href="pcs.system#_uIX74FOPEeykoYywJC50lQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_Lf6BIFOREeykoYywJC50lQ" entityName="Allocation_Assembly_Customs">
+    <resourceContainer_AllocationContext href="pcs.resourceenvironment#_8jSQ0FOQEeykoYywJC50lQ"/>
+    <assemblyContext_AllocationContext href="pcs.system#_sI9o4FOPEeykoYywJC50lQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_LwHnYFOREeykoYywJC50lQ" entityName="Allocation_Assembly_PCS">
+    <resourceContainer_AllocationContext href="pcs.resourceenvironment#_8jSQ0FOQEeykoYywJC50lQ"/>
+    <assemblyContext_AllocationContext href="pcs.system#_xjvPgFOPEeykoYywJC50lQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_MExowFOREeykoYywJC50lQ" entityName="Allocation_Assembly_PortAuthority">
+    <resourceContainer_AllocationContext href="pcs.resourceenvironment#_8jSQ0FOQEeykoYywJC50lQ"/>
+    <assemblyContext_AllocationContext href="pcs.system#_5rMe0FOPEeykoYywJC50lQ"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

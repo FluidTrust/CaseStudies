@@ -1,0 +1,113 @@
+@startuml DataTypes
+
+skinparam class {
+    BackgroundColor<<RealType>> Wheat
+    BackgroundColor<<Parameter>> LightGreen
+    BackgroundColor<<CharacteristicType>> LightBlue
+    BackgroundColor<<ReturnType>> LightGrey
+}
+
+hide methods
+
+class MRN <<Parameter>>
+class Kind <<Parameter>>
+class Amount <<Parameter>>
+class Description <<Parameter>>
+
+class Dangerous <<Parameter>>
+Dangerous --> CT_Dangerous
+
+class Destination <<Parameter>>
+Destination --> CT_State
+Destination --> CT_Destination
+Destination --> CT_Origin
+
+class VGM <<Parameter>>
+VGM --> CT_State
+
+class ContainerAttributes <<Parameter>>
+ContainerAttributes --> CT_State
+
+class OrderNumber <<ReturnType>>
+Order *-- OrderNumber
+OrderNumber --> CT_State
+
+abstract class Order <<RealType>>
+hide Order members
+Order *-- Declaration
+Order *-- Container
+
+abstract class Declaration <<RealType>>
+hide Declaration members
+Declaration *-- MRN
+Declaration *-- Item
+
+abstract class Item <<RealType>>
+hide Item members
+Item *-- Kind
+Item *-- Amount
+Item *-- Dangerous
+Item *-- Description
+
+abstract class Container <<RealType>>
+hide Container members
+Container *-- ContainerAttributes
+Container *-- Destination
+Container *-- VGM
+
+enum Continents {
+	SouthAmerica
+	Europe
+	NothAmerica
+	Asia
+	Australia
+}
+hide Continents methods
+
+enum HazardLevel {
+    None
+    Dangerous
+}
+hide HazardLevel methods
+
+enum Roles {
+    Exporter
+	Customs
+	ShippingLine
+	PCS
+	Terminal
+	PortAuthority
+}
+hide Roles methods
+
+enum State {
+	Created
+	Delivered
+	Presented
+	Locked
+	Cleared
+	Loaded
+}
+hide State methods
+
+class CT_AssignedRoles <<CharacteristicType>>
+hide CT_AssignedRoles members
+CT_AssignedRoles --> Roles
+
+class CT_Dangerous <<CharacteristicType>>
+hide CT_Dangerous members
+CT_Dangerous --> HazardLevel
+
+class CT_State <<CharacteristicType>>
+hide CT_State members
+CT_State --> State
+
+class CT_Origin <<CharacteristicType>>
+hide CT_Origin members
+CT_Origin --> Continents
+
+class CT_Destination <<CharacteristicType>>
+hide CT_Destination members
+CT_Destination --> Continents
+
+@enduml

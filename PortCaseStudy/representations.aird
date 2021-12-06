@@ -10,6 +10,7 @@
     <semanticResources>portHardware.resourceenvironment</semanticResources>
     <semanticResources>portAllocation.allocation</semanticResources>
     <semanticResources>portSystem.pddc</semanticResources>
+    <semanticResources>portSystem2.system</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_ZAyZYCc1Eey4KuaO4Z3-2g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.repository/description/repository.odesign#//@ownedViewpoints[name='Repository']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_eMzUwCp2EeyXVNg0kfeznA" name="new Repository Diagram" repPath="#_eMcIYCp2EeyXVNg0kfeznA" changeId="d40f8f2a-f8dc-4a4a-9631-0da7e0a27db8">

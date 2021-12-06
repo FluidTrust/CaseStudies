@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<characteristics:Characteristics xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataDictionaryCharacterized="http://palladiosimulator.org/dataflow/dictionary/characterized/1.0" xmlns:characteristics="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/characteristics" id="_yxJWIFdmEeyELa6CdsiJfA">
+  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_yx3u4FdmEeyELa6CdsiJfA">
+    <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@7"/>
+    <values href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicEnumerations@0.literals@3"/>
+  </characteristics>
+  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_3YswEFdmEeyELa6CdsiJfA">
+    <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@7"/>
+    <values href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicEnumerations@0.literals@1"/>
+  </characteristics>
+  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_51ZcAFdmEeyELa6CdsiJfA">
+    <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@7"/>
+    <values href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicEnumerations@0.literals@5"/>
+  </characteristics>
+  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_7r_KMFdmEeyELa6CdsiJfA">
+    <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@7"/>
+    <values href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicEnumerations@0.literals@2"/>
+  </characteristics>
+  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_9l6gQFdmEeyELa6CdsiJfA">
+    <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@7"/>
+    <values href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicEnumerations@0.literals@4"/>
+  </characteristics>
+</characteristics:Characteristics>
