@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.palladiosimulator</groupId>
+		<artifactId>eclipse-parent-product</artifactId>
+		<version>0.7.4</version>
+	</parent>
+	<groupId>edu.kit.kastel.dsis.fluidtrust.casestudy.pcs</groupId>
+	<artifactId>parent</artifactId>	
+	<version>5.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>bundles</module>
+		<module>products</module>
+	</modules>
+
+	<profiles>
+
+		<profile>
+			<id>nightly</id>
+			<activation>
+				<property>
+					<name>!release</name>
+				</property>
+			</activation>
+			<repositories>
+				<repository>
+					<id>pcm-nightly</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/</url>
+				</repository>
+				<repository>
+					<id>fluidtrust</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/nightly/</url>
+				</repository>
+				<repository>
+					<id>mdsd.tools</id>
+					<layout>p2</layout>
+					<url>https://updatesite.mdsd.tools/build-updatesite/nightly/</url>
+				</repository>
+				<repository>
+					<id>eclipse-2021-09</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/releases/2021-09/</url>
+				</repository>
+			</repositories>
+		</profile>
+
+		<profile>
+			<id>release</id>
+			<activation>
+				<property>
+					<name>release</name>
+				</property>
+			</activation>
+			<repositories>
+				<repository>
+					<id>pcm-latest</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/palladio-build-updatesite/releases/latest</url>
+				</repository>
+				<repository>
+					<id>fluidtrust</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/releases/latest/</url>
+				</repository>
+				<repository>
+					<id>mdsd.tools</id>
+					<layout>p2</layout>
+					<url>https://updatesite.mdsd.tools/build-updatesite/releases/latest/</url>
+				</repository>
+				<repository>
+					<id>eclipse-2021-09</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/releases/2021-09/</url>
+				</repository>
+			</repositories>
+		</profile>
+
+	</profiles>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-packaging-plugin</artifactId>
+					<version>${tycho.version}</version>
+					<configuration>
+						<useDefaultExcludes>false</useDefaultExcludes>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-director-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+</project>

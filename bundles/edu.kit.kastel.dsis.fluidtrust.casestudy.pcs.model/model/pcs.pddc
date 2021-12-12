@@ -7,6 +7,7 @@ enum Roles {
 	PCS
 	Terminal
 	PortAuthority
+	ALL
 }
 
 enum State {

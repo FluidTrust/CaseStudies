@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>edu.kit.kastel.dsis.fluidtrust.casestudy.pcs</groupId>
+		<artifactId>parent</artifactId>
+		<version>5.1.0-SNAPSHOT</version>
+		<relativePath>../..</relativePath>
+	</parent>
+	<artifactId>edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.product</artifactId>
+	<packaging>eclipse-repository</packaging>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<goal>materialize-products</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+					</execution>
+				</executions>
+				<!--
+				<configuration>
+					<products>
+						<product>
+							<id>${product.id}</id>
+						</product>
+					</products>
+				</configuration>-->
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
+				<executions>
+				<!--
+					<execution>
+						<id>patch-zip-files-with-workspace</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target>
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+								<taskdef resource="net/sf/antcontrib/antlib.xml"/>
+								<for param="file">
+									<path>
+										<fileset dir="${project.build.directory}/products" includes="*.zip"/>
+									</path>
+									<sequential>
+										<local name="prefix"/>
+										<if>
+											<contains string="@{file}" substring="cocoa" />
+											<then>
+												<property name="prefix" value="Eclipse.app/Contents/MacOS/workspace"/>
+											</then>
+											<else>
+												<property name="prefix" value="workspace"/>
+											</else>
+										</if>
+										<echo message="Adding workspace to @{file} with prefix ${prefix}"/>
+										<zip destfile="@{file}" update="true">
+											<zipfileset dir="${project.basedir}/workspace" prefix="${prefix}"/>
+										</zip>
+									</sequential>
+								</for>
+							</target>
+						</configuration>
+					</execution>-->
+					<execution>
+						<id>move-product-zips</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target name="move-product-zips">
+								<move todir="${project.build.directory}/deploy" verbose="true" overwrite="true">
+									<fileset dir="${project.build.directory}/products" includes="*.zip" />
+									<regexpmapper from=".*product-(.*)" to="casestudy.\1"/>
+								</move>
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>ant-contrib</groupId>
+						<artifactId>ant-contrib</artifactId>
+						<version>1.0b3</version>
+						<exclusions>
+							<exclusion>
+								<groupId>ant</groupId>
+								<artifactId>ant</artifactId>
+							</exclusion>
+						</exclusions>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-nodeps</artifactId>
+						<version>1.8.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+		</plugins>
+	</build>
+
+</project>
