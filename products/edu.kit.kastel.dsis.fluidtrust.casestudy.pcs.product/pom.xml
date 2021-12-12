@@ -33,14 +33,6 @@
 						</goals>
 					</execution>
 				</executions>
-				<!--
-				<configuration>
-					<products>
-						<product>
-							<id>${product.id}</id>
-						</product>
-					</products>
-				</configuration>-->
 			</plugin>
 
 			<plugin>
@@ -48,41 +40,6 @@
 				<artifactId>maven-antrun-plugin</artifactId>
 				<version>1.8</version>
 				<executions>
-				<!--
-					<execution>
-						<id>patch-zip-files-with-workspace</id>
-						<phase>package</phase>
-						<goals>
-							<goal>run</goal>
-						</goals>
-						<configuration>
-							<target>
-								<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
-								<taskdef resource="net/sf/antcontrib/antlib.xml"/>
-								<for param="file">
-									<path>
-										<fileset dir="${project.build.directory}/products" includes="*.zip"/>
-									</path>
-									<sequential>
-										<local name="prefix"/>
-										<if>
-											<contains string="@{file}" substring="cocoa" />
-											<then>
-												<property name="prefix" value="Eclipse.app/Contents/MacOS/workspace"/>
-											</then>
-											<else>
-												<property name="prefix" value="workspace"/>
-											</else>
-										</if>
-										<echo message="Adding workspace to @{file} with prefix ${prefix}"/>
-										<zip destfile="@{file}" update="true">
-											<zipfileset dir="${project.basedir}/workspace" prefix="${prefix}"/>
-										</zip>
-									</sequential>
-								</for>
-							</target>
-						</configuration>
-					</execution>-->
 					<execution>
 						<id>move-product-zips</id>
 						<phase>package</phase>
