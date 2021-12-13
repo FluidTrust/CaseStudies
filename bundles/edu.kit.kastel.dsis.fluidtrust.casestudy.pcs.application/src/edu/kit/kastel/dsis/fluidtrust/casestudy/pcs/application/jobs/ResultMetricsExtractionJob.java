@@ -49,7 +49,7 @@ public class ResultMetricsExtractionJob extends AbstractBlackboardInteractingJob
         var analysisResult = new AnalysisResult();
 
         analysisResult.setDirectory(directory);
-        analysisResult.setHasFoundViolation(!prologResults.isEmpty());
+        analysisResult.setFoundViolations(prologResults);
 
         return analysisResult;
     }
