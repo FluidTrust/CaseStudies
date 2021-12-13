@@ -14,18 +14,22 @@ import edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.application.query.QueryBuild
 
 public class CreateAnalysisQueryJob extends AbstractBlackboardInteractingJob<KeyValueMDSDBlackboard> {
 
+    protected final String queryRuleName;
     protected final String traceKey;
     protected final String queryKey;
     protected final String additionsKey;
+    protected final String queryVarsKey;
 
-    public CreateAnalysisQueryJob(String traceKey, String queryKey, String additionsKey) {
+    public CreateAnalysisQueryJob(String queryRuleName, String traceKey, String queryKey, String additionsKey, String queryVarsKey) {
+        this.queryRuleName = queryRuleName;
         this.traceKey = traceKey;
         this.queryKey = queryKey;
         this.additionsKey = additionsKey;
+        this.queryVarsKey = queryVarsKey;
     }
 
     @Override
-    public void execute(IProgressMonitor arg0) throws JobFailedException, UserCanceledException {
+    public void execute(IProgressMonitor monitor) throws JobFailedException, UserCanceledException {
         var trace = getBlackboard().get(traceKey)
             .filter(TransitiveTransformationTrace.class::isInstance)
             .map(TransitiveTransformationTrace.class::cast)
@@ -34,12 +38,14 @@ public class CreateAnalysisQueryJob extends AbstractBlackboardInteractingJob<Key
         var assignedRolesCT = getEnumCharacteristicTypeByName(trace, "AssignedRoles");
         var acObjectCT = getEnumCharacteristicTypeByName(trace, "ACObject");
 
-        var queryBuilder = new QueryBuilder(trace, assignedRolesCT, acObjectCT);
+        var queryBuilder = new QueryBuilder(queryRuleName, trace, assignedRolesCT, acObjectCT);
         var acPolicy = queryBuilder.getAccessControlPolicyFacts();
         var queryRule = queryBuilder.getQueryRule();
 
         var additions = acPolicy + System.lineSeparator() + queryRule;
+        
         getBlackboard().put(additionsKey, additions);
+        getBlackboard().put(queryVarsKey, queryBuilder.getQueryVariables());
     }
 
     protected EnumCharacteristicType getEnumCharacteristicTypeByName(TransitiveTransformationTrace trace, String name)

@@ -1,8 +1,6 @@
 package edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.application.jobs;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
 
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.emf.common.util.URI;
@@ -20,6 +18,10 @@ public class RunCaseStudyForCaseJob extends AbstractBlackboardInteractingJob<Ana
     protected static final String PROLOG_PROGRAM_KEY = "prologProgramKey";
     protected static final String PROLOG_QUERY_KEY = "prologQueryKey";
     protected static final String PROLOG_ADDITIONS_KEY = "prologAdditionsKey";
+    protected static final String PROLOG_QUERY_VARS_KEY = "prologQueryVarsKey";
+    protected static final String PROLOG_RESULTS_KEY = "prologQueryResultsKey";
+    protected static final String RESULT_METRICS_KEY = "resultMetricsKey";
+    protected static final String QUERY_RULE_NAME = "query";
     protected final File usageModel;
     protected final File allocationModel;
     protected final String directory;
@@ -47,25 +49,26 @@ public class RunCaseStudyForCaseJob extends AbstractBlackboardInteractingJob<Ana
             .build();
         job.add(transformationJob);
 
-        var queryCreationJob = new CreateAnalysisQueryJob(TransformPCMDFDToPrologJobBuilder.DEFAULT_TRACE_KEY,
-                PROLOG_QUERY_KEY, PROLOG_ADDITIONS_KEY);
+        var queryCreationJob = new CreateAnalysisQueryJob(QUERY_RULE_NAME, TransformPCMDFDToPrologJobBuilder.DEFAULT_TRACE_KEY,
+                PROLOG_QUERY_KEY, PROLOG_ADDITIONS_KEY, PROLOG_QUERY_VARS_KEY);
         job.add(queryCreationJob);
         
-        job.execute(monitor);
-
-        // result after execution:
-        var program = (String)job.getBlackboard()
-                .get(PROLOG_PROGRAM_KEY).get();
-        var additions = job.getBlackboard().get(PROLOG_ADDITIONS_KEY).orElse("");
-        var fullProgram = program + System.lineSeparator() + additions;
+        var runAnalysisJob = new RunAnalysisQueryJob(QUERY_RULE_NAME, PROLOG_PROGRAM_KEY, PROLOG_ADDITIONS_KEY,
+                PROLOG_QUERY_VARS_KEY, PROLOG_RESULTS_KEY);
+        job.add(runAnalysisJob);
         
-//        try {
-//            Files.writeString(new File("/home/stephan/Downloads/pcs.pl").toPath(), fullProgram);
-//        } catch (IOException e) {
-//            // TODO Auto-generated catch block
-//            e.printStackTrace();
-//        }
+        var createAnalysisResultJob = new ResultMetricsExtractionJob(usageModel.getParentFile(), PROLOG_RESULTS_KEY, RESULT_METRICS_KEY);
+        job.add(createAnalysisResultJob);
+        
+        job.execute(monitor);
+        
+        AnalysisResult analysisResult = job.getBlackboard()
+            .get(RESULT_METRICS_KEY)
+            .filter(AnalysisResult.class::isInstance)
+            .map(AnalysisResult.class::cast)
+            .orElseThrow(() -> new JobFailedException("Could not retrieve analysis result metrics."));
 
+        getBlackboard().addPartition(usageModel.getParent(), analysisResult);
     }
 
     @Override

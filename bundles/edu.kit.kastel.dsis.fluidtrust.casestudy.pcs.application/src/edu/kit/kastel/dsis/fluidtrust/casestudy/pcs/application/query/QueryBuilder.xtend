@@ -7,15 +7,17 @@ import org.palladiosimulator.dataflow.dictionary.characterized.DataDictionaryCha
 
 class QueryBuilder {
 
+		protected val String queryRuleName
         protected val TransitiveTransformationTrace trace;
         protected val EnumCharacteristicType assignedRolesCT;
         protected val EnumCharacteristicType acObjectCT;
-
-        new(TransitiveTransformationTrace trace, EnumCharacteristicType assignedRolesCT, EnumCharacteristicType acObjectCT) {
+	
+        new(String queryRuleName, TransitiveTransformationTrace trace, EnumCharacteristicType assignedRolesCT, EnumCharacteristicType acObjectCT) {
             super();
-            this.trace = trace;
-            this.assignedRolesCT = assignedRolesCT;
-            this.acObjectCT = acObjectCT;
+            this.queryRuleName = queryRuleName
+            this.trace = trace
+            this.assignedRolesCT = assignedRolesCT
+            this.acObjectCT = acObjectCT
         }
 
         def String getAccessControlPolicyFacts() throws JobFailedException '''
@@ -37,7 +39,7 @@ class QueryBuilder {
 			% ==========
 			% Query rule
 			% ==========
-			query(«queryVariables.join(", ")») :-
+			«queryRuleName»(«queryVariables.join(", ")») :-
 				(process(N);actor(N);store(N)),
 				\+ (isACallSending(N); isACallReceiving(N); isASEFFEntry(N); isASEFFExit(N); containedInStore(N)),
 				nodeCharacteristic(N, '«getFactId(assignedRolesCT)»', R),

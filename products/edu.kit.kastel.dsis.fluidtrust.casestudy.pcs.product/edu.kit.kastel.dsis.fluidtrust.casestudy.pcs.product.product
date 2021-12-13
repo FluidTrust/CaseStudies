@@ -11,6 +11,15 @@
       </vmArgsMac>
    </launcherArgs>
 
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
    <plugins>
       <plugin id="aopalliance"/>
       <plugin id="com.google.guava"/>
@@ -29,7 +38,6 @@
       <plugin id="de.uka.ipd.sdq.workflow.logging.console"/>
       <plugin id="de.uka.ipd.sdq.workflow.mdsd.blackboard"/>
       <plugin id="edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.application"/>
-      <plugin id="edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.model"/>
       <plugin id="io.github.classgraph"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
@@ -40,11 +48,13 @@
       <plugin id="org.apache.batik.i18n"/>
       <plugin id="org.apache.batik.util"/>
       <plugin id="org.apache.commons.cli"/>
+      <plugin id="org.apache.commons.csv"/>
       <plugin id="org.apache.commons.io"/>
       <plugin id="org.apache.commons.jxpath"/>
       <plugin id="org.apache.commons.lang3"/>
       <plugin id="org.apache.commons.logging"/>
       <plugin id="org.apache.commons.math"/>
+      <plugin id="org.apache.felix.scr"/>
       <plugin id="org.apache.log4j"/>
       <plugin id="org.apache.xmlgraphics"/>
       <plugin id="org.apiguardian"/>
@@ -179,6 +189,7 @@
       <plugin id="org.palladiosimulator.supporting.prolog.api"/>
       <plugin id="org.palladiosimulator.supporting.prolog.model"/>
       <plugin id="org.prolog4j.api"/>
+      <plugin id="org.prolog4j.manager"/>
       <plugin id="org.prolog4j.swicli"/>
       <plugin id="org.prolog4j.swicli.enabler"/>
       <plugin id="org.tukaani.xz"/>
@@ -192,11 +203,13 @@
    </plugins>
 
    <configurations>
-      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.prolog4j.manager" autoStart="true" startLevel="0" />
+      <plugin id="org.prolog4j.swicli.enabler" autoStart="true" startLevel="0" />
    </configurations>
 
 </product>

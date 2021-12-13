@@ -1,7 +1,11 @@
 package edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.application.jobs;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.PrintStream;
 
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 import org.eclipse.core.runtime.IProgressMonitor;
 
 import de.uka.ipd.sdq.workflow.jobs.AbstractBlackboardInteractingJob;
@@ -19,8 +23,19 @@ public class SerializeResultsToCSVJob extends AbstractBlackboardInteractingJob<A
     
     @Override
     public void execute(IProgressMonitor arg0) throws JobFailedException, UserCanceledException {
-        // TODO Auto-generated method stub
-        
+        var csvFormat = CSVFormat.DEFAULT.withHeader("directory", "foundViolation");
+        try (var ps = new PrintStream(resultFile)) {
+            try (var csvPrinter = new CSVPrinter(ps, csvFormat)) {
+                for (var directory : getBlackboard().getPartitionIds()) {
+                    var result = getBlackboard().getPartition(directory);
+                    csvPrinter.print(result.getDirectory().getAbsolutePath());
+                    csvPrinter.print(result.hasFoundViolation());
+                    csvPrinter.println();
+                }
+            }
+        } catch (IOException e) {
+            throw new JobFailedException("Could not serialize results to CSV.", e);
+        }
     }
 
     @Override

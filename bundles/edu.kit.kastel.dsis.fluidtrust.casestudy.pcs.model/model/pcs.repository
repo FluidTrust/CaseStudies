@@ -2896,8 +2896,72 @@
     <components__Repository xsi:type="repository:BasicComponent" id="_0AV6AFN9EeykhaXsiLsjgQ" entityName="PortAuthority">
       <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_1LA9YFN9EeykhaXsiLsjgQ" entityName="PortAuthority.provided.PortAuthority" providedInterface__OperationProvidedRole="_l81x0FKzEeyV7eWpTR_YIA"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_1LA9YVN9EeykhaXsiLsjgQ" describedService__SEFF="_GeQzoFLKEeyV7eWpTR_YIA">
-        <steps_Behaviour xsi:type="seff:StartAction" id="_1LBkcFN9EeykhaXsiLsjgQ" successor_AbstractAction="_1LBkcVN9EeykhaXsiLsjgQ"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_1LBkcVN9EeykhaXsiLsjgQ" predecessor_AbstractAction="_1LBkcFN9EeykhaXsiLsjgQ"/>
+        <steps_Behaviour xsi:type="seff:StartAction" id="_1LBkcFN9EeykhaXsiLsjgQ" successor_AbstractAction="_TPyTsFvxEeyemPuw-zOj0A"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_1LBkcVN9EeykhaXsiLsjgQ" predecessor_AbstractAction="_TPyTsFvxEeyemPuw-zOj0A"/>
+        <steps_Behaviour xsi:type="seff:BranchAction" id="_TPyTsFvxEeyemPuw-zOj0A" entityName="PortAuthority:send_port_order: branch on what to access" predecessor_AbstractAction="_1LBkcFN9EeykhaXsiLsjgQ" successor_AbstractAction="_1LBkcVN9EeykhaXsiLsjgQ">
+          <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_aNBLkFvxEeyemPuw-zOj0A" entityName="PortAuthority:send_port_order: only access mrn and dangerous">
+            <branchBehaviour_BranchTransition id="_aNByoFvxEeyemPuw-zOj0A">
+              <steps_Behaviour xsi:type="seff:StartAction" id="_aNCZsFvxEeyemPuw-zOj0A" successor_AbstractAction="_BAGlQFvzEeyemPuw-zOj0A"/>
+              <steps_Behaviour xsi:type="seff:StopAction" id="_aNDAwFvxEeyemPuw-zOj0A" predecessor_AbstractAction="_BAGlQFvzEeyemPuw-zOj0A"/>
+              <steps_Behaviour xsi:type="seff:SetVariableAction" id="_BAGlQFvzEeyemPuw-zOj0A" entityName="PortAuthority:send_port_order: access order" predecessor_AbstractAction="_aNCZsFvxEeyemPuw-zOj0A" successor_AbstractAction="_aNDAwFvxEeyemPuw-zOj0A">
+                <localVariableUsages_SetVariableAction>
+                  <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+                    <specification_VariableCharacterisation specification="false"/>
+                    <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_PssVgFvzEeyemPuw-zOj0A">
+                      <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@6"/>
+                    </lhs>
+                    <rhs xsi:type="expressions:Or" id="_PssVgVvzEeyemPuw-zOj0A">
+                      <left xsi:type="expression:NamedEnumCharacteristicReference" id="_PssVglvzEeyemPuw-zOj0A">
+                        <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@6"/>
+                        <namedReference xsi:type="stoex:VariableReference" referenceName="mrn"/>
+                      </left>
+                      <right xsi:type="expression:NamedEnumCharacteristicReference" id="_PssVg1vzEeyemPuw-zOj0A">
+                        <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@6"/>
+                        <namedReference xsi:type="stoex:VariableReference" referenceName="dangerous"/>
+                      </right>
+                    </rhs>
+                  </variableCharacterisation_VariableUsage>
+                  <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="tmp"/>
+                </localVariableUsages_SetVariableAction>
+              </steps_Behaviour>
+            </branchBehaviour_BranchTransition>
+            <branchCondition_GuardedBranchTransition specification="true"/>
+          </branches_Branch>
+          <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_iB3n8FvxEeyemPuw-zOj0A" entityName="PortAuthority:send_port_order: access mrn, dangerous and vgm">
+            <branchBehaviour_BranchTransition id="_iB3n8VvxEeyemPuw-zOj0A">
+              <steps_Behaviour xsi:type="seff:StartAction" id="_iB4PAFvxEeyemPuw-zOj0A" successor_AbstractAction="_CROO4FvzEeyemPuw-zOj0A"/>
+              <steps_Behaviour xsi:type="seff:StopAction" id="_iB42EFvxEeyemPuw-zOj0A" predecessor_AbstractAction="_CROO4FvzEeyemPuw-zOj0A"/>
+              <steps_Behaviour xsi:type="seff:SetVariableAction" id="_CROO4FvzEeyemPuw-zOj0A" entityName="PortAuthority:send_port_order: access order and vgm" predecessor_AbstractAction="_iB4PAFvxEeyemPuw-zOj0A" successor_AbstractAction="_iB42EFvxEeyemPuw-zOj0A">
+                <localVariableUsages_SetVariableAction>
+                  <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+                    <specification_VariableCharacterisation specification="false"/>
+                    <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_Qaw8cFvzEeyemPuw-zOj0A">
+                      <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@6"/>
+                    </lhs>
+                    <rhs xsi:type="expressions:Or" id="_Qaw8cVvzEeyemPuw-zOj0A">
+                      <left xsi:type="expressions:Or" id="_Qaw8clvzEeyemPuw-zOj0A">
+                        <left xsi:type="expression:NamedEnumCharacteristicReference" id="_Qaw8c1vzEeyemPuw-zOj0A">
+                          <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@6"/>
+                          <namedReference xsi:type="stoex:VariableReference" referenceName="mrn"/>
+                        </left>
+                        <right xsi:type="expression:NamedEnumCharacteristicReference" id="_Qaw8dFvzEeyemPuw-zOj0A">
+                          <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@6"/>
+                          <namedReference xsi:type="stoex:VariableReference" referenceName="dangerous"/>
+                        </right>
+                      </left>
+                      <right xsi:type="expression:NamedEnumCharacteristicReference" id="_Qaw8dVvzEeyemPuw-zOj0A">
+                        <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="pcs.pddc#_aBLOEFBjEeyJN45tl5CnJQ-characteristicTypes@6"/>
+                        <namedReference xsi:type="stoex:VariableReference" referenceName="vgm"/>
+                      </right>
+                    </rhs>
+                  </variableCharacterisation_VariableUsage>
+                  <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="tmp"/>
+                </localVariableUsages_SetVariableAction>
+              </steps_Behaviour>
+            </branchBehaviour_BranchTransition>
+            <branchCondition_GuardedBranchTransition specification="true"/>
+          </branches_Branch>
+        </steps_Behaviour>
       </serviceEffectSpecifications__BasicComponent>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_1LNxsFN9EeykhaXsiLsjgQ" describedService__SEFF="_fltlsFN5EeykhaXsiLsjgQ">
         <steps_Behaviour xsi:type="seff:StartAction" id="_1LNxsVN9EeykhaXsiLsjgQ" successor_AbstractAction="_1LNxslN9EeykhaXsiLsjgQ"/>
