@@ -13,9 +13,6 @@ In the sequence diagram, the `Exporter` is a user. All other actors are system p
 ![](pcm-sequence.svg)
 
 ## Data Model
-We do not use composite data types but model every individual data item composed in a larger data type. Especially, the data types `Order` and `Container` are used in the publication. However, a clear specification of the inner data types is missing. We derive this specification from the 
-
-
 The publication describes the data model as shown in the figure below. Based on the data model, there are access control requirements given by an RBAC policy also shown in the figure below. Unfortunately, there is no perfect mapping between the RBAC policy and the data model because the `value` data type is missing. We assume that the `value` data type is part of the `Item`.
 ![](RBAC.png)
 
