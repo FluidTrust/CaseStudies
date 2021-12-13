@@ -19,7 +19,7 @@ We do not use composite data types but model every individual data item composed
 The publication describes the data model as shown in the figure below. Based on the data model, there are access control requirements given by an RBAC policy also shown in the figure below. Unfortunately, there is no perfect mapping between the RBAC policy and the data model because the `value` data type is missing. We assume that the `value` data type is part of the `Item`.
 ![](RBAC.png)
 
-The sequence diagram does nto use the data types specified in the RBAC policy but only refers to `Order` and `Container`. To simplify the mapping between the RBAC policy and the exchanged data, we replace `Order` and `Container` by the data types, which represent them. The figure given below illustrates our approach. Colored nodes have different meanings:
+The sequence diagram does not use the data types specified in the RBAC policy but only refers to `Order` and `Container`. To simplify the mapping between the RBAC policy and the exchanged data, we replace `Order` and `Container` by the data types, which represent them. The figure given below illustrates our approach. Colored nodes have different meanings:
 * Orange: Data types available in the sequence diagram (will be replaced)
 * Green: Data types used in newly introduced parameters
 * Blue: Metadata about the exchanged data
