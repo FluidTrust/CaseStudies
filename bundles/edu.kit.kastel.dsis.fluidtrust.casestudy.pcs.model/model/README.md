@@ -24,3 +24,19 @@ The sequence diagram does not use the data types specified in the RBAC policy bu
 
 ![](pcm-objects.svg)
 
+## Ideas for Exceptional Cases
+* Port Authority can read only dangerous goods, but nothing more
+* Fire
+	* During a fire incident the port authority should know the content of all stored containers
+	* e.g. avoid mixing of chemicals and chemical reactions or more explosions
+* Customs
+	* based on some factors the customs agency decides whether containers need to be physically controlled or whether they just provide the clearance
+	* based on the origin country a container might always be controlled e.g. Columbia
+* Drug Raid
+	* During a drug raid the customs authority needs access to all container data
+* Wrong classification of dangerous goods
+	* Dangerous good might be wrongly classified
+	* then depending on the scenario, the port authority might not get the dangerous goods or get too much information
+	* wrong labeling might occur because of regulation changes, e.g. such as in the start port it was labeled as dangerous by the arrival time destination port, it isn't anymore
+* Wrong execution order
+	* e.g. a ship contains undeclared goods
