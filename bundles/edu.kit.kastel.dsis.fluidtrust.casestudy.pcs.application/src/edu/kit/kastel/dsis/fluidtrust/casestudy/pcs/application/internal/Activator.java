@@ -41,9 +41,11 @@ public class Activator extends Plugin {
 
         public void uninit() {
             synchronized(this) {
-                context.ungetService(serviceReference);
-                serviceReference = null;
-                service = null;                
+                if (serviceReference != null) {
+                    context.ungetService(serviceReference);
+                    serviceReference = null;
+                    service = null;                                    
+                }
             }
         }
     }

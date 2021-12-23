@@ -1,13 +1,12 @@
 package edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.application.jobs;
 
 import java.io.File;
-import java.util.List;
-import java.util.Map;
 
 public class AnalysisResult {
 
     private File directory;
-    private List<Map<String, Object>> foundViolations; 
+    private File violationsFile;
+    private boolean hasFoundViolations;
 
     public File getDirectory() {
         return directory;
@@ -17,16 +16,20 @@ public class AnalysisResult {
         this.directory = directory;
     }
 
-    public boolean hasFoundViolation() {
-        return !foundViolations.isEmpty();
+    public File getViolationsFile() {
+        return violationsFile;
     }
 
-    public List<Map<String, Object>> getFoundViolations() {
-        return foundViolations;
+    public void setViolationsFile(File violationsFile) {
+        this.violationsFile = violationsFile;
     }
 
-    public void setFoundViolations(List<Map<String, Object>> foundViolations) {
-        this.foundViolations = foundViolations;
+    public boolean hasFoundViolations() {
+        return hasFoundViolations;
+    }
+
+    public void setHasFoundViolations(boolean hasFoundViolations) {
+        this.hasFoundViolations = hasFoundViolations;
     }
 
 }

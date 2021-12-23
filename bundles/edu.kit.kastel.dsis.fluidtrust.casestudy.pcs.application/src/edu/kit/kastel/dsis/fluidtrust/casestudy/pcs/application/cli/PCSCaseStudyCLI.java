@@ -65,9 +65,15 @@ public class PCSCaseStudyCLI implements IApplication {
             .required()
             .desc("Name of result file (has to end with \".csv\")")
             .build();
+        final Option stackLimitOption = Option.builder("s")
+            .argName("stack limit")
+            .hasArg()
+            .desc("Stack size limit as specified for SWI Prolog.")
+            .build();
         options.addOption(helpOption)
             .addOption(folderOption)
-            .addOption(resultOption);
+            .addOption(resultOption)
+            .addOption(stackLimitOption);
 
         // parse command line
         final CommandLineParser parser = new DefaultParser();
@@ -104,9 +110,11 @@ public class PCSCaseStudyCLI implements IApplication {
             return createHelpAction(options, System.err,
                     "The given " + resultOption.getArgName() + " has to end with \".csv\".");
         }
+        
+        Optional<String> stackLimit = Optional.ofNullable(commandLine.getOptionValue(stackLimitOption.getOpt()));
 
         // create run action
-        return createRunAction(scenarioFolder, resultFile);
+        return createRunAction(scenarioFolder, resultFile, stackLimit);
     }
 
     protected Callable<Integer> createHelpAction(Options options, PrintStream ps) {
@@ -130,7 +138,7 @@ public class PCSCaseStudyCLI implements IApplication {
         }
     }
 
-    protected Callable<Integer> createRunAction(File scenarioFolder, File resultFile) {
+    protected Callable<Integer> createRunAction(File scenarioFolder, File resultFile, Optional<String> stackLimit) {
         return () -> {
             try {
                 // initialization
@@ -145,9 +153,11 @@ public class PCSCaseStudyCLI implements IApplication {
                 Logger.getLogger(AbstractCleaningLinker.class).setLevel(Level.WARN);
                 
                 // build and run job
-                var job = CaseStudyWorkflowBuilder.builder()
+                var jobBuilder = CaseStudyWorkflowBuilder.builder()
                     .casesFolder(scenarioFolder)
-                    .resultFile(resultFile)
+                    .resultFile(resultFile);
+                stackLimit.ifPresent(s -> jobBuilder.stackLimit(s));
+                var job = jobBuilder
                     .build();
                 var workflow = new Workflow(job);
                 workflow.run();

@@ -19,6 +19,7 @@ public class CaseStudyWorkflowBuilder {
 
     private File resultFile;
     private File casesFolder;
+    private String stackLimit;
 
     private CaseStudyWorkflowBuilder() {
         // intentionally left blank
@@ -47,7 +48,7 @@ public class CaseStudyWorkflowBuilder {
         // add case execution jobs
         var caseDTOs = findCasesInDirectory();
         for (CaseDTO caseDTO : caseDTOs) {
-            job.add(new RunCaseStudyForCaseJob(caseDTO.getUsageModel(), caseDTO.getAllocationModel()));
+            job.add(new RunCaseStudyForCaseJob(caseDTO.getUsageModel(), caseDTO.getAllocationModel(), stackLimit));
         }
 
         // add analysis result to CSV job
@@ -129,6 +130,11 @@ public class CaseStudyWorkflowBuilder {
             .sorted((d1, d2) -> d1.getDirectory()
                 .compareTo(d2.getDirectory()))
             .collect(Collectors.toList());
+    }
+
+    public CaseStudyWorkflowBuilder stackLimit(String stackLimit) {
+        this.stackLimit = stackLimit;
+        return this;
     }
 
 }

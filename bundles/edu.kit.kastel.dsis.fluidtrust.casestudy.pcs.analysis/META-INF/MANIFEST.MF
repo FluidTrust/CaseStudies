@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Analysis
+Bundle-SymbolicName: edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.analysis
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.analysis
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Require-Bundle: com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ org.palladiosimulator.dataflow.confidentiality.pcm.queryutils;bundle-version="5.1.0",
+ org.palladiosimulator.dataflow.confidentiality.pcm.transformation;bundle-version="5.1.0"
+Export-Package: edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.analysis,
+ edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.analysis.dto

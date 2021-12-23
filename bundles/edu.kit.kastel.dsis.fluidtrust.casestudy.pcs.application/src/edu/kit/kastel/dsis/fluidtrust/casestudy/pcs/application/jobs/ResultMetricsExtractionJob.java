@@ -1,8 +1,7 @@
 package edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.application.jobs;
 
 import java.io.File;
-import java.util.List;
-import java.util.Map;
+import java.util.Collection;
 
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.palladiosimulator.dataflow.confidentiality.transformation.workflow.blackboards.KeyValueMDSDBlackboard;
@@ -11,45 +10,44 @@ import de.uka.ipd.sdq.workflow.jobs.AbstractBlackboardInteractingJob;
 import de.uka.ipd.sdq.workflow.jobs.CleanupFailedException;
 import de.uka.ipd.sdq.workflow.jobs.JobFailedException;
 import de.uka.ipd.sdq.workflow.jobs.UserCanceledException;
+import edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.analysis.dto.ActionBasedQueryResult;
 
 public class ResultMetricsExtractionJob extends AbstractBlackboardInteractingJob<KeyValueMDSDBlackboard> {
 
     protected final File directory;
-    protected final String prologResultKey;
+    protected final String violationsKey;
+    protected final File violationsFile;
     protected final String analysisResultKey;
 
-    public ResultMetricsExtractionJob(File directory, String prologResultKey, String analysisResultKey) {
+    public ResultMetricsExtractionJob(File directory, String violationsKey, File violationsFile, String analysisResultKey) {
         this.directory = directory;
-        this.prologResultKey = prologResultKey;
+        this.violationsKey = violationsKey;
+        this.violationsFile = violationsFile;
         this.analysisResultKey = analysisResultKey;
     }
 
     @Override
     public void execute(IProgressMonitor monitor) throws JobFailedException, UserCanceledException {
-        @SuppressWarnings("unchecked")
-        var prologResults = getBlackboard().get(prologResultKey)
-            .filter(List.class::isInstance)
-            .map(List.class::cast)
-            .filter(l -> l.stream()
-                .allMatch(Map.class::isInstance))
-            .map(l -> (List<Map<?, ?>>) l)
-            .filter(l -> l.stream()
-                .allMatch(m -> m.keySet()
-                    .stream()
-                    .allMatch(String.class::isInstance)))
-            .map(l -> (List<Map<String, Object>>) ((List<?>) l))
+        var violations = getBlackboard().get(violationsKey)
+            .filter(ActionBasedQueryResult.class::isInstance)
+            .map(ActionBasedQueryResult.class::cast)
             .orElseThrow(() -> new JobFailedException("Prolog results are not in expected format."));
 
-        var analysisResult = createAnalysisReult(prologResults);
-
+        var analysisResult = createAnalysisResult(violations);
         getBlackboard().put(analysisResultKey, analysisResult);
     }
 
-    private AnalysisResult createAnalysisReult(List<Map<String, Object>> prologResults) {
+    private AnalysisResult createAnalysisResult(ActionBasedQueryResult violations) {
         var analysisResult = new AnalysisResult();
 
         analysisResult.setDirectory(directory);
-        analysisResult.setFoundViolations(prologResults);
+        analysisResult.setViolationsFile(violationsFile);
+        analysisResult.setHasFoundViolations(violations.getResults()
+            .values()
+            .stream()
+            .flatMap(Collection::stream)
+            .findAny()
+            .isPresent());
 
         return analysisResult;
     }
