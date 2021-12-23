@@ -92,14 +92,14 @@ public class PCSCaseStudyCLI implements IApplication {
 
         // validate arguments
         String folderArgument = commandLine.getOptionValue(folderOption.getOpt());
-        File scenarioFolder = new File(folderArgument);
+        File scenarioFolder = new File(folderArgument).getAbsoluteFile();
         if (!scenarioFolder.isDirectory()) {
             return createHelpAction(options, System.err,
                     "The given " + folderOption.getArgName() + " has to be an existing directory.");
         }
 
         String resultArgument = commandLine.getOptionValue(resultOption.getOpt());
-        File resultFile = new File(resultArgument);
+        File resultFile = new File(resultArgument).getAbsoluteFile();
         if (!resultFile.getParentFile()
             .isDirectory()) {
             return createHelpAction(options, System.err,
