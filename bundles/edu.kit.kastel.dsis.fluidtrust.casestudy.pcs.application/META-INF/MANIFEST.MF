@@ -25,3 +25,4 @@ Require-Bundle: org.eclipse.core.runtime;bundle-version="3.23.0",
  com.fasterxml.jackson.core.jackson-databind;bundle-version="2.12.1"
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.application.internal.Activator
+Export-Package: edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.application.jobs
