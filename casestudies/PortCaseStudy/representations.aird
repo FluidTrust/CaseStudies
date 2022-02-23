@@ -35,7 +35,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']"/>
         <target xmi:type="seff:ResourceDemandingSEFF" href="portSystem.repository#_ybzvQCp3EeyXVNg0kfeznA"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mCK8QCp7EeyQUZAfFpKaVQ" name="&lt;PortCommunicationSystem>&lt;portOrder> SEFF Diagram" repPath="#_mCDAcCp7EeyQUZAfFpKaVQ" changeId="9af84b21-88c8-4359-bc46-fc22e3704d78">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mCK8QCp7EeyQUZAfFpKaVQ" name="&lt;PortCommunicationSystem>&lt;portOrder> SEFF Diagram" repPath="#_mCDAcCp7EeyQUZAfFpKaVQ" changeId="eac1e7b1-6715-42fa-9b8d-2fffb6944a1f">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']"/>
         <target xmi:type="seff:ResourceDemandingSEFF" href="portSystem.repository#_mB4BUCp7EeyQUZAfFpKaVQ"/>
       </ownedRepresentationDescriptors>
@@ -47,7 +47,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']"/>
         <target xmi:type="seff:ResourceDemandingSEFF" href="portSystem.repository#_tXNQICp7EeyQUZAfFpKaVQ"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_HsDAcCp9EeyQUZAfFpKaVQ" name="&lt;PortCommunicationSystem>&lt;gateIn> SEFF Diagram" repPath="#_Hr-vACp9EeyQUZAfFpKaVQ" changeId="397006a7-be56-4a83-94d6-36ee89eba3df">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_HsDAcCp9EeyQUZAfFpKaVQ" name="&lt;PortCommunicationSystem>&lt;gateIn> SEFF Diagram" repPath="#_Hr-vACp9EeyQUZAfFpKaVQ" changeId="73ac8eb7-eb28-4f5e-a2b6-ca2009a3dcd5">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']"/>
         <target xmi:type="seff:ResourceDemandingSEFF" href="portSystem.repository#_HOHHQCp9EeyQUZAfFpKaVQ"/>
       </ownedRepresentationDescriptors>
@@ -12187,7 +12187,7 @@
                     <styles xmi:type="notation:DrawerStyle" xmi:id="_3CtFGyp7EeyQUZAfFpKaVQ"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_3CtFFSp7EeyQUZAfFpKaVQ" fontName="Ubuntu" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3CtFFip7EeyQUZAfFpKaVQ" width="719"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3CtFFip7EeyQUZAfFpKaVQ" y="634" width="719"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_3CtsICp7EeyQUZAfFpKaVQ" type="3008" element="_3CGoICp7EeyQUZAfFpKaVQ">
                   <children xmi:type="notation:Node" xmi:id="_3CtsIyp7EeyQUZAfFpKaVQ" type="5005"/>
@@ -12248,7 +12248,7 @@
                     <styles xmi:type="notation:DrawerStyle" xmi:id="_3CtsJyp7EeyQUZAfFpKaVQ"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_3CtsISp7EeyQUZAfFpKaVQ" fontName="Ubuntu" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3CtsIip7EeyQUZAfFpKaVQ" y="40" width="719" height="634"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3CtsIip7EeyQUZAfFpKaVQ" width="719" height="634"/>
                 </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_3CtFEip7EeyQUZAfFpKaVQ"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_3CtFEyp7EeyQUZAfFpKaVQ"/>
@@ -12465,7 +12465,7 @@
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_zOOt4Cp7EeyQUZAfFpKaVQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']"/>
+      <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='BranchAction']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3Arr0Cp7EeyQUZAfFpKaVQ" name="&lt;&lt;GuardedBranchTransition>>&#xA;GuardedBranchTransition1" width="15" childrenPresentation="VerticalStack">
         <target xmi:type="seff:GuardedBranchTransition" href="portSystem.repository#_3Ak-ICp7EeyQUZAfFpKaVQ"/>
         <semanticElements xmi:type="seff:GuardedBranchTransition" href="portSystem.repository#_3Ak-ICp7EeyQUZAfFpKaVQ"/>
@@ -12475,7 +12475,7 @@
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_3AvWMCp7EeyQUZAfFpKaVQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']"/>
+        <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']"/>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_3CFaDip7EeyQUZAfFpKaVQ" name="Cond: true">
           <target xmi:type="seff:GuardedBranchTransition" href="portSystem.repository#_3Ak-ICp7EeyQUZAfFpKaVQ"/>
           <semanticElements xmi:type="seff:GuardedBranchTransition" href="portSystem.repository#_3Ak-ICp7EeyQUZAfFpKaVQ"/>
@@ -12490,7 +12490,7 @@
           <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_3CGoISp7EeyQUZAfFpKaVQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']/@subContainerMappings[name='BranchBehaviour']/@style"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']/@subContainerMappings[name='BranchBehaviour']"/>
+          <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']/@subContainerMappings[name='BranchBehaviour']"/>
           <ownedDiagramElements xmi:type="diagram:DNode" uid="_3CHPMCp7EeyQUZAfFpKaVQ" outgoingEdges="__1ESkCp7EeyQUZAfFpKaVQ" width="3" height="3">
             <target xmi:type="seff:StartAction" href="portSystem.repository#_3AoBcCp7EeyQUZAfFpKaVQ"/>
             <semanticElements xmi:type="seff:StartAction" href="portSystem.repository#_3AoBcCp7EeyQUZAfFpKaVQ"/>
@@ -12513,7 +12513,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@nodeMappings[name='StopNode']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7jNb0Cp7EeyQUZAfFpKaVQ" name="&lt;&lt;ExternalCallAction>>&#xA;ExternalCallAction1&#xA;PortCommunicationSystem.PortAuthority.OperationRequiredRole2.portOrder" visible="false" outgoingEdges="_AllwkCp8EeyQUZAfFpKaVQ" incomingEdges="__1ESkCp7EeyQUZAfFpKaVQ" childrenPresentation="VerticalStack">
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7jNb0Cp7EeyQUZAfFpKaVQ" name="&lt;&lt;ExternalCallAction>>&#xA;ExternalCallAction1&#xA;PortCommunicationSystem.PortAuthority.OperationRequiredRole2.portOrder" outgoingEdges="_AllwkCp8EeyQUZAfFpKaVQ" incomingEdges="__1ESkCp7EeyQUZAfFpKaVQ" childrenPresentation="VerticalStack">
             <target xmi:type="seff:ExternalCallAction" href="portSystem.repository#_63lr8Cp7EeyQUZAfFpKaVQ"/>
             <semanticElements xmi:type="seff:ExternalCallAction" href="portSystem.repository#_63lr8Cp7EeyQUZAfFpKaVQ"/>
             <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -12523,7 +12523,7 @@
               <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='ExternalCallAction']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='ExternalCallAction']"/>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7jmdYSp7EeyQUZAfFpKaVQ" name="InputVariableUsageCompartment" visible="false">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7jmdYSp7EeyQUZAfFpKaVQ" name="InputVariableUsageCompartment">
               <target xmi:type="seff:ExternalCallAction" href="portSystem.repository#_63lr8Cp7EeyQUZAfFpKaVQ"/>
               <semanticElements xmi:type="seff:ExternalCallAction" href="portSystem.repository#_63lr8Cp7EeyQUZAfFpKaVQ"/>
               <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_7jmdYip7EeyQUZAfFpKaVQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
@@ -12531,7 +12531,7 @@
               </ownedStyle>
               <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='ExternalCallAction']/@subContainerMappings[name='InputVariableUsageCompartment']"/>
             </ownedDiagramElements>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7jnEcCp7EeyQUZAfFpKaVQ" name="OutputVariableUsageCompartment" visible="false">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7jnEcCp7EeyQUZAfFpKaVQ" name="OutputVariableUsageCompartment">
               <target xmi:type="seff:ExternalCallAction" href="portSystem.repository#_63lr8Cp7EeyQUZAfFpKaVQ"/>
               <semanticElements xmi:type="seff:ExternalCallAction" href="portSystem.repository#_63lr8Cp7EeyQUZAfFpKaVQ"/>
               <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_7jnEcSp7EeyQUZAfFpKaVQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
@@ -12543,7 +12543,7 @@
         </ownedDiagramElements>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__1ESkCp7EeyQUZAfFpKaVQ" visible="false" sourceNode="_3CHPMCp7EeyQUZAfFpKaVQ" targetNode="_7jNb0Cp7EeyQUZAfFpKaVQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__1ESkCp7EeyQUZAfFpKaVQ" sourceNode="_3CHPMCp7EeyQUZAfFpKaVQ" targetNode="_7jNb0Cp7EeyQUZAfFpKaVQ">
       <target xmi:type="seff:StartAction" href="portSystem.repository#_3AoBcCp7EeyQUZAfFpKaVQ"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__1E5oCp7EeyQUZAfFpKaVQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@edgeMappings[name='ControlFlow']/@style"/>
@@ -12551,7 +12551,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@edgeMappings[name='ControlFlow']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_AllwkCp8EeyQUZAfFpKaVQ" visible="false" sourceNode="_7jNb0Cp7EeyQUZAfFpKaVQ" targetNode="_3CH2QCp7EeyQUZAfFpKaVQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_AllwkCp8EeyQUZAfFpKaVQ" sourceNode="_7jNb0Cp7EeyQUZAfFpKaVQ" targetNode="_3CH2QCp7EeyQUZAfFpKaVQ">
       <target xmi:type="seff:ExternalCallAction" href="portSystem.repository#_63lr8Cp7EeyQUZAfFpKaVQ"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_AllwkSp8EeyQUZAfFpKaVQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@edgeMappings[name='ControlFlow']/@style"/>
@@ -13080,7 +13080,7 @@
                     <styles xmi:type="notation:DrawerStyle" xmi:id="_9O-ILip9EeyQUZAfFpKaVQ"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_9O-IKCp9EeyQUZAfFpKaVQ" fontName="Ubuntu" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9O-IKSp9EeyQUZAfFpKaVQ" width="785"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9O-IKSp9EeyQUZAfFpKaVQ" y="363" width="785"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_9O-ILyp9EeyQUZAfFpKaVQ" type="3008" element="_9Oow_yp9EeyQUZAfFpKaVQ">
                   <children xmi:type="notation:Node" xmi:id="_9O-vMCp9EeyQUZAfFpKaVQ" type="5005"/>
@@ -13141,7 +13141,7 @@
                     <styles xmi:type="notation:DrawerStyle" xmi:id="_9O-vNCp9EeyQUZAfFpKaVQ"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_9O-IMCp9EeyQUZAfFpKaVQ" fontName="Ubuntu" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9O-IMSp9EeyQUZAfFpKaVQ" y="40" width="785" height="363"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9O-IMSp9EeyQUZAfFpKaVQ" width="785" height="363"/>
                 </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_9O-IJSp9EeyQUZAfFpKaVQ"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_9O-IJip9EeyQUZAfFpKaVQ"/>
@@ -13360,7 +13360,7 @@
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_678VkCp9EeyQUZAfFpKaVQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']"/>
+      <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='BranchAction']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_9N_3wCp9EeyQUZAfFpKaVQ" name="&lt;&lt;GuardedBranchTransition>>&#xA;GuardedBranchTransition1" width="15" childrenPresentation="VerticalStack">
         <target xmi:type="seff:GuardedBranchTransition" href="portSystem.repository#_9N9bgCp9EeyQUZAfFpKaVQ"/>
         <semanticElements xmi:type="seff:GuardedBranchTransition" href="portSystem.repository#_9N9bgCp9EeyQUZAfFpKaVQ"/>
@@ -13370,7 +13370,7 @@
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_9N_3wSp9EeyQUZAfFpKaVQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']"/>
+        <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']"/>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_9Oow_Cp9EeyQUZAfFpKaVQ" name="Cond: true">
           <target xmi:type="seff:GuardedBranchTransition" href="portSystem.repository#_9N9bgCp9EeyQUZAfFpKaVQ"/>
           <semanticElements xmi:type="seff:GuardedBranchTransition" href="portSystem.repository#_9N9bgCp9EeyQUZAfFpKaVQ"/>
@@ -13385,7 +13385,7 @@
           <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_9OpYACp9EeyQUZAfFpKaVQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']/@subContainerMappings[name='BranchBehaviour']/@style"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']/@subContainerMappings[name='BranchBehaviour']"/>
+          <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='BranchAction']/@subContainerMappings[name='GuardedBranchTransition']/@subContainerMappings[name='BranchBehaviour']"/>
           <ownedDiagramElements xmi:type="diagram:DNode" uid="_9OpYAip9EeyQUZAfFpKaVQ" outgoingEdges="_Bx2dcCp-EeyQUZAfFpKaVQ" width="3" height="3">
             <target xmi:type="seff:StartAction" href="portSystem.repository#_9N-poCp9EeyQUZAfFpKaVQ"/>
             <semanticElements xmi:type="seff:StartAction" href="portSystem.repository#_9N-poCp9EeyQUZAfFpKaVQ"/>
@@ -13405,7 +13405,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@nodeMappings[name='StopNode']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__qtKwCp9EeyQUZAfFpKaVQ" name="&lt;&lt;ExternalCallAction>>&#xA;ExternalCallAction1&#xA;PortCommunicationSystem.PortAuthority.OperationRequiredRole2.gateIn" visible="false" outgoingEdges="_CRowxCp-EeyQUZAfFpKaVQ" incomingEdges="_Bx2dcCp-EeyQUZAfFpKaVQ" childrenPresentation="VerticalStack">
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__qtKwCp9EeyQUZAfFpKaVQ" name="&lt;&lt;ExternalCallAction>>&#xA;ExternalCallAction1&#xA;PortCommunicationSystem.PortAuthority.OperationRequiredRole2.gateIn" outgoingEdges="_CRowxCp-EeyQUZAfFpKaVQ" incomingEdges="_Bx2dcCp-EeyQUZAfFpKaVQ" childrenPresentation="VerticalStack">
             <target xmi:type="seff:ExternalCallAction" href="portSystem.repository#_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
             <semanticElements xmi:type="seff:ExternalCallAction" href="portSystem.repository#_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
             <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -13415,7 +13415,7 @@
               <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@containerMappings[name='ExternalCallAction']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='ExternalCallAction']"/>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__rCh9Sp9EeyQUZAfFpKaVQ" name="InputVariableUsageCompartment" visible="false">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__rCh9Sp9EeyQUZAfFpKaVQ" name="InputVariableUsageCompartment">
               <target xmi:type="seff:ExternalCallAction" href="portSystem.repository#_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
               <semanticElements xmi:type="seff:ExternalCallAction" href="portSystem.repository#_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
               <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__rCh9ip9EeyQUZAfFpKaVQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
@@ -13423,7 +13423,7 @@
               </ownedStyle>
               <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']/@ownedRepresentationExtensions[name='PCM%20Confidentiality%20SEFF']/@layers[name='org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.seff']/@containerMappings[name='ExternalCallAction']/@subContainerMappings[name='InputVariableUsageCompartment']"/>
             </ownedDiagramElements>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__rDJASp9EeyQUZAfFpKaVQ" name="OutputVariableUsageCompartment" visible="false">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__rDJASp9EeyQUZAfFpKaVQ" name="OutputVariableUsageCompartment">
               <target xmi:type="seff:ExternalCallAction" href="portSystem.repository#_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
               <semanticElements xmi:type="seff:ExternalCallAction" href="portSystem.repository#_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
               <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__rDJAip9EeyQUZAfFpKaVQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
@@ -13435,7 +13435,7 @@
         </ownedDiagramElements>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Bx2dcCp-EeyQUZAfFpKaVQ" visible="false" sourceNode="_9OpYAip9EeyQUZAfFpKaVQ" targetNode="__qtKwCp9EeyQUZAfFpKaVQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Bx2dcCp-EeyQUZAfFpKaVQ" sourceNode="_9OpYAip9EeyQUZAfFpKaVQ" targetNode="__qtKwCp9EeyQUZAfFpKaVQ">
       <target xmi:type="seff:StartAction" href="portSystem.repository#_9N-poCp9EeyQUZAfFpKaVQ"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Bx3EgCp-EeyQUZAfFpKaVQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@edgeMappings[name='ControlFlow']/@style"/>
@@ -13443,7 +13443,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@edgeMappings[name='ControlFlow']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_CRowxCp-EeyQUZAfFpKaVQ" visible="false" sourceNode="__qtKwCp9EeyQUZAfFpKaVQ" targetNode="_9OpYBSp9EeyQUZAfFpKaVQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_CRowxCp-EeyQUZAfFpKaVQ" sourceNode="__qtKwCp9EeyQUZAfFpKaVQ" targetNode="_9OpYBSp9EeyQUZAfFpKaVQ">
       <target xmi:type="seff:ExternalCallAction" href="portSystem.repository#_-_Ez0Cp9EeyQUZAfFpKaVQ"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_CRpX0Cp-EeyQUZAfFpKaVQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']/@ownedRepresentations[name='Seff%20Diagram']/@defaultLayer/@edgeMappings[name='ControlFlow']/@style"/>
