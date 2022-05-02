@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context:ConfidentialAccessSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.palladiosimulator.org/pcm/confidentiality/context/policy/0.1/" xmlns:context="http://www.palladiosimulator.org/pcm/confidentiality/context/0.1/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:structure="http://www.palladiosimulator.org/pcm/confidentiality/context/specification/pcm/structure/0.1/" xmlns:systemcontext="http://www.palladiosimulator.org/pcm/confidentiality/context/systemcontext/0.1/">
+  <pcmspecificationcontainer id="_9t2EIMnsEeyyl-Yj9mL2zQ">
+    <usagespecification id="_czfbkcnvEeyyl-Yj9mL2zQ" entityName="Customs" attributevalue="_-81KUMntEeyyl-Yj9mL2zQ" attribute="__aelEMnsEeyyl-Yj9mL2zQ"/>
+    <usagespecification id="_lgzxAcnvEeyyl-Yj9mL2zQ" entityName="Exporter" attributevalue="_BJxYcMntEeyyl-Yj9mL2zQ" attribute="__aelEMnsEeyyl-Yj9mL2zQ"/>
+    <usagespecification id="_K69j4cooEey9B-CEMDksLA" entityName="PCS" attributevalue="_D0qb8MnuEeyyl-Yj9mL2zQ" attribute="__aelEMnsEeyyl-Yj9mL2zQ"/>
+    <usagespecification id="_RT-7ccooEey9B-CEMDksLA" entityName="Terminal" attributevalue="_G7eb4MnuEeyyl-Yj9mL2zQ" attribute="__aelEMnsEeyyl-Yj9mL2zQ"/>
+    <usagespecification id="_XQzfMcooEey9B-CEMDksLA" entityName="Shipping Line" attributevalue="_A8f8AMnuEeyyl-Yj9mL2zQ" attribute="__aelEMnsEeyyl-Yj9mL2zQ"/>
+    <usagespecification id="_VZa04coqEey9B-CEMDksLA" entityName="Port Authority" attributevalue="_JWJukMnuEeyyl-Yj9mL2zQ" attribute="__aelEMnsEeyyl-Yj9mL2zQ"/>
+  </pcmspecificationcontainer>
+  <policyset id="_-0oGAcnsEeyyl-Yj9mL2zQ" entityName="PCS-Overall">
+    <policyset id="_NpiPUMnuEeyyl-Yj9mL2zQ" entityName="Container">
+      <policy id="_TZqa4cnuEeyyl-Yj9mL2zQ" entityName="Value/Description">
+        <rule id="_Vax-EMnuEeyyl-Yj9mL2zQ" entityName="Exporter">
+          <condition xsi:type="SimpleAttributeCondition" id="_kneVR8nvEeyyl-Yj9mL2zQ" attribute="_lgzxAcnvEeyyl-Yj9mL2zQ"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_ogz-UsnvEeyyl-Yj9mL2zQ">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_pvh0McnvEeyyl-Yj9mL2zQ">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_wSL9kFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_-9lYwFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_U12SUFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_wwRTEsnvEeyyl-Yj9mL2zQ">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_xP51YcnvEeyyl-Yj9mL2zQ">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_wSL9kFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JP7AsFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+        <rule id="_yy1dMMnuEeyyl-Yj9mL2zQ" entityName="Custom">
+          <condition xsi:type="SimpleAttributeCondition" id="_0xvZ58nuEeyyl-Yj9mL2zQ" entityName="Allow Custom" attribute="_czfbkcnvEeyyl-Yj9mL2zQ"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_2rBPsMnuEeyyl-Yj9mL2zQ">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_5kTxAcnuEeyyl-Yj9mL2zQ">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_wQ2g0FLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_-9lYwFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_VyPpIFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_JmOVcsnvEeyyl-Yj9mL2zQ">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_Kq4QYcnvEeyyl-Yj9mL2zQ">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_wQ2g0FLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JMhHYFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_n4Q9gsokEeyuZ6oodYCkyQ">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_oSD9kcokEeyuZ6oodYCkyQ">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_4-mUEFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_8dNtwFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_Xiqd4FLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_GdcFIsonEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_H7jo8conEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_4-mUEFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JMrfcFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+      </policy>
+      <policy id="_ZKk5sconEey9B-CEMDksLA" entityName="Destination/Amount/Kind">
+        <rule id="_Ze1ScMonEey9B-CEMDksLA" entityName="Exporter">
+          <condition xsi:type="SimpleAttributeCondition" id="_mDnot8onEey9B-CEMDksLA" attribute="_lgzxAcnvEeyyl-Yj9mL2zQ"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_ppAbAsonEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_ql3r4conEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_Id56sFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_9L3jgFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_Z58eUFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_yCpKAsooEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_y_xgoMooEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_4_7w0FLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JPAasFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_yAWgcsonEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_ypVzEconEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_Ohw6kFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_94MeAFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_cQoB0FLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_RDGKUsopEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_RgAv0copEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_Ohw6kFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JNOSAFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_3ueg4sonEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_4NxsAconEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_TXM_gFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_7TFc8FN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_bGcGoFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_Z16q0sopEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_aMibEcopEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_TXM_gFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JPOdIFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+        <rule id="_-tgvkMonEey9B-CEMDksLA" entityName="Customs/ShippingLine/PCS/Terminal">
+          <condition xsi:type="Apply" id="_F0up4MooEey9B-CEMDksLA" operation="OR">
+            <parameters xsi:type="SimpleAttributeCondition" id="_I752N8ooEey9B-CEMDksLA" attribute="_czfbkcnvEeyyl-Yj9mL2zQ"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_JiWLJ8ooEey9B-CEMDksLA" attribute="_lgzxAcnvEeyyl-Yj9mL2zQ"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_J3nQh8ooEey9B-CEMDksLA" attribute="_XQzfMcooEey9B-CEMDksLA"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_KPhaN8ooEey9B-CEMDksLA" attribute="_K69j4cooEey9B-CEMDksLA"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_bZ5bh8ooEey9B-CEMDksLA" attribute="_RT-7ccooEey9B-CEMDksLA"/>
+          </condition>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_fNN8IsooEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_ff3LUcooEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_Icas8FLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_9L3jgFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_afuE4FLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_nhjUYsopEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_oC_NgcopEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_Icas8FLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JOSB8FN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_kH-l8sooEey9B-CEMDksLA"/>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_ykqcgsopEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_y_IyAcopEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_Ogw1AFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JPrJEFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_icNLMsopEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_i3_IQcopEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_TWwTkFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_7TFc8FN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_bpyrUFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_7uypwsopEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_8HL7ocopEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_TWwTkFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JN6OgFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+      </policy>
+      <policy id="_SLuw48oqEey9B-CEMDksLA" entityName="DangerousGoods">
+        <rule id="_Z2jHgMoqEey9B-CEMDksLA" entityName="Exporter">
+          <condition xsi:type="SimpleAttributeCondition" id="_l7uJl8oqEey9B-CEMDksLA" attribute="_lgzxAcnvEeyyl-Yj9mL2zQ"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_oEmhosoqEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_oWe70coqEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_CGUtkFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_79C_8FN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_YZ7dEFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_s37GssoqEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_ucbmYcoqEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_CGUtkFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JOv8AFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+        <rule id="_0Cyx-MoqEey9B-CEMDksLA" entityName="Customs/ShippingLine/PCS/Terminal/PortAuthority">
+          <condition xsi:type="Apply" id="_6lCW8MoqEey9B-CEMDksLA" operation="OR">
+            <parameters xsi:type="SimpleAttributeCondition" id="_9UQ9V8oqEey9B-CEMDksLA" attribute="_czfbkcnvEeyyl-Yj9mL2zQ"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_9uKEB8oqEey9B-CEMDksLA" attribute="_XQzfMcooEey9B-CEMDksLA"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="__QqYl8oqEey9B-CEMDksLA" attribute="_K69j4cooEey9B-CEMDksLA"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_-auPF8oqEey9B-CEMDksLA" attribute="_RT-7ccooEey9B-CEMDksLA"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_-E4h98oqEey9B-CEMDksLA" attribute="_VZa04coqEey9B-CEMDksLA"/>
+          </condition>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_JqLKEsorEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_KHrlccorEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_CFPIcFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_79C_8FN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_ZU2NMFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_OYBZQsorEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_OuWOkcorEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_CFPIcFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JOe2QFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+      </policy>
+      <policy id="_WSk1AcorEey9B-CEMDksLA" entityName="Container Attributes">
+        <rule id="_ddVykMorEey9B-CEMDksLA" entityName="Exporter">
+          <condition xsi:type="SimpleAttributeCondition" id="_g8JbxsorEey9B-CEMDksLA" attribute="_lgzxAcnvEeyyl-Yj9mL2zQ"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_jtwAssorEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_j_2dUcorEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_9v11gFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_Ro5BUFOAEeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_ze6wUFNvEeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_oMuGYsorEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_oiqhMcorEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_9v11gFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JNuoUFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+        <rule id="_uONHsMorEey9B-CEMDksLA" entityName="ShippingLine/PCS/terminal">
+          <condition xsi:type="Apply" id="_yHnpQMorEey9B-CEMDksLA">
+            <parameters xsi:type="SimpleAttributeCondition" id="_zIIEB8orEey9B-CEMDksLA" attribute="_XQzfMcooEey9B-CEMDksLA"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_0uAct8orEey9B-CEMDksLA" attribute="_K69j4cooEey9B-CEMDksLA"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_3O5FF8orEey9B-CEMDksLA" attribute="_RT-7ccooEey9B-CEMDksLA"/>
+          </condition>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_6TdpUsorEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_6prw8corEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_9uzTsFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_Ro5BUFOAEeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_0L0SkFNvEeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_DaZ_ssosEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_Dv68scosEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_9uzTsFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JPdGoFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+      </policy>
+      <policy id="_LekDYcosEey9B-CEMDksLA" entityName="MRN">
+        <rule id="_bUSl8MosEey9B-CEMDksLA" entityName="Customs">
+          <condition xsi:type="SimpleAttributeCondition" id="_bzPy18osEey9B-CEMDksLA" attribute="_czfbkcnvEeyyl-Yj9mL2zQ"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_ePRwYsosEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_fK_KscosEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_siA3kFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_-ZXRYFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_dSfugFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_sGbGYsosEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_sXwG8cosEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_siA3kFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JNkQQFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+        <rule id="_jmNY0MosEey9B-CEMDksLA" entityName="ShippingLine">
+          <condition xsi:type="SimpleAttributeCondition" id="_l2Eip8osEey9B-CEMDksLA" attribute="_XQzfMcooEey9B-CEMDksLA"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_qMYbksosEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_yW3wwcosEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_sgkGEFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_-ZXRYFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_d0rOgFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_4Ct5QsosEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_4hsUQcosEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_sgkGEFLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JOF0sFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+      </policy>
+      <policy id="_-AeRIcosEey9B-CEMDksLA" entityName="VGM">
+        <rule id="_Ax_9kMotEey9B-CEMDksLA" entityName="Exporter/PCS">
+          <condition xsi:type="Apply" id="_BDiZgMotEey9B-CEMDksLA" operation="OR">
+            <parameters xsi:type="SimpleAttributeCondition" id="_Fj7bh8otEey9B-CEMDksLA" attribute="_lgzxAcnvEeyyl-Yj9mL2zQ"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_G5uJx8otEey9B-CEMDksLA" attribute="_K69j4cooEey9B-CEMDksLA"/>
+          </condition>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_M7jwYsotEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_No9o8cotEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_XBITkFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#__vevwFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_ebORIFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_R8bCMsotEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_SVfpgcotEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_XBITkFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JMIs4FN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+        <rule id="_XROjuMotEey9B-CEMDksLA" entityName="ShippingLine/Terminal">
+          <condition xsi:type="Apply" id="_bPkBgMotEey9B-CEMDksLA">
+            <parameters xsi:type="SimpleAttributeCondition" id="_cGlJF8otEey9B-CEMDksLA" attribute="_XQzfMcooEey9B-CEMDksLA"/>
+            <parameters xsi:type="SimpleAttributeCondition" id="_dinCN8otEey9B-CEMDksLA" attribute="_RT-7ccooEey9B-CEMDksLA"/>
+          </condition>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_guS7EsotEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_hRiyEcotEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_wQ2g0FLKEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_-9lYwFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_VyPpIFLMEeyV7eWpTR_YIA"/>
+              </methodspecification>
+            </match>
+          </target>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_lOqH4sotEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_ln2D8cotEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_W95ZYFLLEeyV7eWpTR_YIA"/>
+                <hierachy href="pcs.repository#_IKQqEFOIEeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.repository#_x_ejkFN_EeykhaXsiLsjgQ"/>
+                <service href="pcs.repository#_JNYqEFN_EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+      </policy>
+    </policyset>
+    <policyset id="_tFBAIMotEey9B-CEMDksLA" entityName="Methods">
+      <policy id="_1OWewcotEey9B-CEMDksLA" entityName="Customs">
+        <rule id="_3knLgMotEey9B-CEMDksLA" entityName="Exporter: Declare Goods">
+          <condition xsi:type="SimpleAttributeCondition" id="_30gBp8otEey9B-CEMDksLA" attribute="_lgzxAcnvEeyyl-Yj9mL2zQ"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_8FlcUsotEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_8W8SEcotEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_U2CzgFK0EeyV7eWpTR_YIA"/>
+                <assemblycontext href="pcs.system#_sI9o4FOPEeykoYywJC50lQ"/>
+                <service href="pcs.repository#_oCXFEFN9EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+        <rule id="_SBUMcMoxEey9B-CEMDksLA" entityName="PCS Present to Customs">
+          <condition xsi:type="SimpleAttributeCondition" id="_YYAox8oxEey9B-CEMDksLA" attribute="_K69j4cooEey9B-CEMDksLA"/>
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_aOMHQsoxEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_aew54coxEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_r9pywFN5EeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.system#_sI9o4FOPEeykoYywJC50lQ"/>
+                <service href="pcs.repository#_oCMtAFN9EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+        <rule id="_eA_DcMoxEey9B-CEMDksLA" entityName="PCS: all loaded">
+          <target>
+            <match xsi:type="structure:MethodMatch" id="_nsxzUsoxEey9B-CEMDksLA">
+              <methodspecification xsi:type="structure:ServiceSpecification" id="_oCSJQcoxEey9B-CEMDksLA">
+                <signature xsi:type="repository:OperationSignature" href="pcs.repository#_O62OEFN9EeykhaXsiLsjgQ"/>
+                <assemblycontext href="pcs.system#_sI9o4FOPEeykoYywJC50lQ"/>
+                <service href="pcs.repository#_oB1goFN9EeykhaXsiLsjgQ"/>
+              </methodspecification>
+            </match>
+          </target>
+        </rule>
+      </policy>
+      <policy id="_6OkTgcoxEey9B-CEMDksLA" entityName="Terminal"/>
+      <policy id="_9MzmQcoxEey9B-CEMDksLA" entityName="PCS"/>
+    </policyset>
+  </policyset>
+  <attributes>
+    <attribute xsi:type="systemcontext:SimpleAttribute" id="__aelEMnsEeyyl-Yj9mL2zQ" entityName="Roles">
+      <attributevalue id="_BJxYcMntEeyyl-Yj9mL2zQ" entityName="Exporter">
+        <values>Exporter</values>
+      </attributevalue>
+      <attributevalue id="_-81KUMntEeyyl-Yj9mL2zQ" entityName="Customs">
+        <values>Customs</values>
+      </attributevalue>
+      <attributevalue id="_A8f8AMnuEeyyl-Yj9mL2zQ" entityName="ShippingLine">
+        <values>Shipping Line</values>
+      </attributevalue>
+      <attributevalue id="_D0qb8MnuEeyyl-Yj9mL2zQ" entityName="PCS">
+        <values>PCS</values>
+      </attributevalue>
+      <attributevalue id="_G7eb4MnuEeyyl-Yj9mL2zQ" entityName="Terminal">
+        <values>Terminal</values>
+      </attributevalue>
+      <attributevalue id="_JWJukMnuEeyyl-Yj9mL2zQ" entityName="PortAuthority">
+        <values>PortAuthority</values>
+      </attributevalue>
+    </attribute>
+  </attributes>
+</context:ConfidentialAccessSpecification>
