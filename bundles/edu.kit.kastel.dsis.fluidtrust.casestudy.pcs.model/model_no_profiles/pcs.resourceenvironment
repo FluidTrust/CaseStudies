@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="New ResourceEnvironment">
+  <linkingResources__ResourceEnvironment id="_BC7r8FOREeykoYywJC50lQ" entityName="Internet" connectedResourceContainers_LinkingResource="__6QzsFOQEeykoYywJC50lQ _8jSQ0FOQEeykoYywJC50lQ">
+    <communicationLinkResourceSpecifications_LinkingResource id="_BC-vQFOREeykoYywJC50lQ">
+      <latency_CommunicationLinkResourceSpecification/>
+      <throughput_CommunicationLinkResourceSpecification/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_8jSQ0FOQEeykoYywJC50lQ" entityName="PortServer"/>
+  <resourceContainer_ResourceEnvironment id="__6QzsFOQEeykoYywJC50lQ" entityName="ShippingLineServer"/>
+</resourceenvironment:ResourceEnvironment>

@@ -1,0 +1,56 @@
+dictionary id "_aBLOEFBjEeyJN45tl5CnJQ"
+
+enum Roles {
+	Exporter
+	Customs
+	ShippingLine
+	PCS
+	Terminal
+	PortAuthority
+	ALL
+}
+
+enum State {
+	Created
+	Delivered
+	Presented
+	Locked
+	Cleared
+	Loaded
+	Unloaded
+	Released
+	Collected
+	Completed
+}
+
+enum Continents {
+	SouthAmerica
+	Europe
+	NothAmerica
+	Asia
+	Australia
+}
+
+enum HazardLevel {
+	None
+	Dangerous
+}
+
+enum Objects {
+	ValueDescription
+	DestinationKindAmount
+	DangerousGoods
+	ContainerAttributes
+	VGM
+	Declaration
+	Order
+}
+
+enumCharacteristicType ReadAccess using Roles
+enumCharacteristicType CreateAccess using Roles
+enumCharacteristicType ObjectState using State
+enumCharacteristicType Origin using Continents
+enumCharacteristicType Destination using Continents
+enumCharacteristicType Dangerous using HazardLevel
+enumCharacteristicType ACObject using Objects
+enumCharacteristicType AssignedRoles using Roles
