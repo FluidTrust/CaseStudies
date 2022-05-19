@@ -1,0 +1,17 @@
+name: Build Pipeline
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  Build-Bench:
+   runs-on: ubuntu-latest
+   
+   steps:
+      - uses: PalladioSimulator/Palladio-Build-ActionsPipeline@v2
+        with:
+          deploy-updatesite: 'products/edu.kit.kastel.dsis.fluidtrust.casestudy.pcs.product/target/deploy'
+          server-ssh-key: ${{ secrets.DEPLOYMENT_SERVER_SSH_KEY }}
+          remote-host: ${{ secrets.DEPLOYMENT_REMOTE_HOST }}
+          remote-port: ${{ secrets.DEPLOYMENT_REMOTE_PORT }}
+          remote-user: ${{ secrets.DEPLOYMENT_REMOTE_USER }}
+          remote-target: ${{ secrets.DEPLOYMENT_REMOTE_TARGET }}
