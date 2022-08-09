@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataDictionaryCharacterized="http://palladiosimulator.org/dataflow/dictionary/characterized/1.0" xmlns:confidentiality="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0" xmlns:expression="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/expression" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" id="_bWfWIBcfEe2S64bq59AiXg" entityName="New Repository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_cjzd0BcfEe2S64bq59AiXg" entityName="CustomSystem">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_hTe5ABcfEe2S64bq59AiXg" entityName="CustomSystem.Custom.OperationProvidedRole1" providedInterface__OperationProvidedRole="_eaD00BcfEe2S64bq59AiXg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_6g3HcBcfEe2S64bq59AiXg" describedService__SEFF="_hoijABcfEe2S64bq59AiXg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_7EZSUBcfEe2S64bq59AiXg" successor_AbstractAction="_VnV1ABeuEe2Trpr8Xm2hsw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_7EZ5YBcfEe2S64bq59AiXg" predecessor_AbstractAction="_VnV1ABeuEe2Trpr8Xm2hsw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_VnV1ABeuEe2Trpr8Xm2hsw" entityName="virtualInspection" predecessor_AbstractAction="_7EZSUBcfEe2S64bq59AiXg" successor_AbstractAction="_7EZ5YBcfEe2S64bq59AiXg">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_d8CPEBeuEe2Trpr8Xm2hsw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_d8CPEReuEe2Trpr8Xm2hsw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="con"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="con"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_7VBIQBcfEe2S64bq59AiXg" describedService__SEFF="_iDy7oBcfEe2S64bq59AiXg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_7zSYoBcfEe2S64bq59AiXg" successor_AbstractAction="_kV1IEBfBEe2eR_dOLeflIA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_7zSYoRcfEe2S64bq59AiXg" predecessor_AbstractAction="_kV1IEBfBEe2eR_dOLeflIA"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_kV1IEBfBEe2eR_dOLeflIA" entityName="PhysicalInspection" predecessor_AbstractAction="_7zSYoBcfEe2S64bq59AiXg" successor_AbstractAction="_7zSYoRcfEe2S64bq59AiXg">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_ulbIkBfBEe2eR_dOLeflIA">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_ulbIkRfBEe2eR_dOLeflIA">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="con"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="con"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_eaD00BcfEe2S64bq59AiXg" entityName="Custom">
+    <signatures__OperationInterface id="_hoijABcfEe2S64bq59AiXg" entityName="virtualInspection">
+      <parameters__OperationSignature dataType__Parameter="_nwCswBcfEe2S64bq59AiXg" parameterName="con"/>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_iDy7oBcfEe2S64bq59AiXg" entityName="physicalInspection">
+      <parameters__OperationSignature dataType__Parameter="_nwCswBcfEe2S64bq59AiXg" parameterName="con"/>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_nwCswBcfEe2S64bq59AiXg" entityName="Container">
+    <innerDeclaration_CompositeDataType entityName="ID">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Origin">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+</repository:Repository>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="New ResourceEnvironment">
+  <linkingResources__ResourceEnvironment id="_AFlUQBcgEe2S64bq59AiXg" entityName="LinkingResource1" connectedResourceContainers_LinkingResource="_-Yk_4BcfEe2S64bq59AiXg">
+    <communicationLinkResourceSpecifications_LinkingResource id="_AFl7UBcgEe2S64bq59AiXg">
+      <latency_CommunicationLinkResourceSpecification/>
+      <throughput_CommunicationLinkResourceSpecification/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_-Yk_4BcfEe2S64bq59AiXg" entityName="Customs"/>
+</resourceenvironment:ResourceEnvironment>

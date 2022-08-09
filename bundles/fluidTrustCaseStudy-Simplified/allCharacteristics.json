@@ -1,0 +1,50 @@
+[ {
+  "characteristics" : [ {
+    "element" : "SystemCallPhysicalInspection (_QReUEBcgEe2S64bq59AiXg) of type EntryLevelSystemCall (calling)",
+    "nodeCharacteristics" : [ "Userroles.Customs" ],
+    "dataCharacteristics" : {
+      "con" : [ "Destination.Columbia" ]
+    }
+  }, {
+    "element" : "PhysicalInspection (_kV1IEBfBEe2eR_dOLeflIA) of type SetVariableAction",
+    "context" : "Assembly_CustomSystem (_x35GgBcfEe2S64bq59AiXg)",
+    "nodeCharacteristics" : [ ],
+    "dataCharacteristics" : {
+      "con" : [ "Destination.Columbia" ]
+    }
+  }, {
+    "element" : "SystemCallPhysicalInspection (_QReUEBcgEe2S64bq59AiXg) of type EntryLevelSystemCall (returning)",
+    "nodeCharacteristics" : [ "Userroles.Customs" ],
+    "dataCharacteristics" : { }
+  } ],
+  "actionSequence" : [ {
+    "context" : [ ],
+    "element" : {
+      "type" : "EntryLevelSystemCall",
+      "name" : "SystemCallPhysicalInspection",
+      "id" : "_QReUEBcgEe2S64bq59AiXg"
+    },
+    "callingPart" : true,
+    "returningPart" : false
+  }, {
+    "context" : [ {
+      "type" : "AssemblyContext",
+      "name" : "Assembly_CustomSystem",
+      "id" : "_x35GgBcfEe2S64bq59AiXg"
+    } ],
+    "element" : {
+      "type" : "SetVariableAction",
+      "name" : "PhysicalInspection",
+      "id" : "_kV1IEBfBEe2eR_dOLeflIA"
+    }
+  }, {
+    "context" : [ ],
+    "element" : {
+      "type" : "EntryLevelSystemCall",
+      "name" : "SystemCallPhysicalInspection",
+      "id" : "_QReUEBcgEe2S64bq59AiXg"
+    },
+    "callingPart" : false,
+    "returningPart" : true
+  } ]
+} ]

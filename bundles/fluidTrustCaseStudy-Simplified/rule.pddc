@@ -1,0 +1,15 @@
+dictionary id "_WKZPQBcgEe2S64bq59AiXg"
+
+enum Roles{
+	Customs
+	CustomLead
+	PortAuthority
+}
+
+enum Countries {
+	Columbia
+	France
+}
+
+enumCharacteristicType Destination using Countries
+enumCharacteristicType Userroles using Roles
