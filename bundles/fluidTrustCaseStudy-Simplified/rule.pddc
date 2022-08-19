@@ -11,5 +11,12 @@ enum Countries {
 	France
 }
 
+enum Levels {
+	high
+	medium
+	low
+}
+
 enumCharacteristicType Destination using Countries
 enumCharacteristicType Userroles using Roles
+enumCharacteristicType IncidentRates using Levels

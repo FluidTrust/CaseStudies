@@ -1,19 +1,21 @@
 [ {
   "characteristics" : [ {
-    "element" : "SystemCallPhysicalInspection (_QReUEBcgEe2S64bq59AiXg) of type EntryLevelSystemCall (calling)",
+    "element" : "EntryCallVirtualInspection (_RFU9cBchEe2S64bq59AiXg) of type EntryLevelSystemCall (calling)",
     "nodeCharacteristics" : [ "Userroles.Customs" ],
     "dataCharacteristics" : {
+      "incidentRate" : [ "IncidentRates.medium" ],
       "con" : [ "Destination.Columbia" ]
     }
   }, {
-    "element" : "PhysicalInspection (_kV1IEBfBEe2eR_dOLeflIA) of type SetVariableAction",
+    "element" : "virtualInspection (_VnV1ABeuEe2Trpr8Xm2hsw) of type SetVariableAction",
     "context" : "Assembly_CustomSystem (_x35GgBcfEe2S64bq59AiXg)",
     "nodeCharacteristics" : [ ],
     "dataCharacteristics" : {
+      "incidentRate" : [ "IncidentRates.medium" ],
       "con" : [ "Destination.Columbia" ]
     }
   }, {
-    "element" : "SystemCallPhysicalInspection (_QReUEBcgEe2S64bq59AiXg) of type EntryLevelSystemCall (returning)",
+    "element" : "EntryCallVirtualInspection (_RFU9cBchEe2S64bq59AiXg) of type EntryLevelSystemCall (returning)",
     "nodeCharacteristics" : [ "Userroles.Customs" ],
     "dataCharacteristics" : { }
   } ],
@@ -21,8 +23,8 @@
     "context" : [ ],
     "element" : {
       "type" : "EntryLevelSystemCall",
-      "name" : "SystemCallPhysicalInspection",
-      "id" : "_QReUEBcgEe2S64bq59AiXg"
+      "name" : "EntryCallVirtualInspection",
+      "id" : "_RFU9cBchEe2S64bq59AiXg"
     },
     "callingPart" : true,
     "returningPart" : false
@@ -34,15 +36,15 @@
     } ],
     "element" : {
       "type" : "SetVariableAction",
-      "name" : "PhysicalInspection",
-      "id" : "_kV1IEBfBEe2eR_dOLeflIA"
+      "name" : "virtualInspection",
+      "id" : "_VnV1ABeuEe2Trpr8Xm2hsw"
     }
   }, {
     "context" : [ ],
     "element" : {
       "type" : "EntryLevelSystemCall",
-      "name" : "SystemCallPhysicalInspection",
-      "id" : "_QReUEBcgEe2S64bq59AiXg"
+      "name" : "EntryCallVirtualInspection",
+      "id" : "_RFU9cBchEe2S64bq59AiXg"
     },
     "callingPart" : false,
     "returningPart" : true

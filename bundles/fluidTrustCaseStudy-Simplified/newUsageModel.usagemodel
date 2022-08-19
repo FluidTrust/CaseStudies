@@ -40,6 +40,17 @@
             </variableCharacterisation_VariableUsage>
             <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="con"/>
           </inputParameterUsages_EntryLevelSystemCall>
+          <inputParameterUsages_EntryLevelSystemCall>
+            <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+              <specification_VariableCharacterisation specification="false"/>
+              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_JIZAwB-gEe2OFdWEroze1w">
+                <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@2"/>
+                <literal href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicEnumerations@2.literals@0"/>
+              </lhs>
+              <rhs xsi:type="expressions:True" id="_JIZAwR-gEe2OFdWEroze1w"/>
+            </variableCharacterisation_VariableUsage>
+            <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="incidentRate"/>
+          </inputParameterUsages_EntryLevelSystemCall>
         </actions_ScenarioBehaviour>
       </scenarioBehaviour_UsageScenario>
     </usageScenario_UsageModel>

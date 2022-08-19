@@ -19,6 +19,19 @@
           </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="con"/>
         </localVariableUsages_SetVariableAction>
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="__R4OoB-fEe2OFdWEroze1w">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@2"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="__R4OoR-fEe2OFdWEroze1w">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@2"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="incidentRate"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="incidentRate"/>
+        </localVariableUsages_SetVariableAction>
       </steps_Behaviour>
     </serviceEffectSpecifications__BasicComponent>
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_7VBIQBcfEe2S64bq59AiXg" describedService__SEFF="_iDy7oBcfEe2S64bq59AiXg">
@@ -44,6 +57,9 @@
   <interfaces__Repository xsi:type="repository:OperationInterface" id="_eaD00BcfEe2S64bq59AiXg" entityName="Custom">
     <signatures__OperationInterface id="_hoijABcfEe2S64bq59AiXg" entityName="virtualInspection">
       <parameters__OperationSignature dataType__Parameter="_nwCswBcfEe2S64bq59AiXg" parameterName="con"/>
+      <parameters__OperationSignature parameterName="incidentRate">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
       <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
     </signatures__OperationInterface>
     <signatures__OperationInterface id="_iDy7oBcfEe2S64bq59AiXg" entityName="physicalInspection">
