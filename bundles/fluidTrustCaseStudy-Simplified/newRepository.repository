@@ -9,11 +9,8 @@
         <localVariableUsages_SetVariableAction>
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
-            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_d8CPEBeuEe2Trpr8Xm2hsw">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@0"/>
-            </lhs>
-            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_d8CPEReuEe2Trpr8Xm2hsw">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@0"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_ZAoPBFa6Ee2dovriS-lrQw"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_ZAoPBVa6Ee2dovriS-lrQw">
               <namedReference xsi:type="stoex:VariableReference" referenceName="con"/>
             </rhs>
           </variableCharacterisation_VariableUsage>

@@ -17,6 +17,12 @@ enum Levels {
 	low
 }
 
+enum Goods{
+	Dangerous
+	NonDangerous
+}
+
 enumCharacteristicType Destination using Countries
 enumCharacteristicType Userroles using Roles
 enumCharacteristicType IncidentRates using Levels
+enumCharacteristicType DangerousType using Goods
