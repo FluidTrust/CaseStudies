@@ -50,6 +50,25 @@
         </localVariableUsages_SetVariableAction>
       </steps_Behaviour>
     </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_JAL40FqtEe2qg-kYolqCnw" describedService__SEFF="_3vqzQFqsEe2qg-kYolqCnw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_JlwEAFqtEe2qg-kYolqCnw" successor_AbstractAction="_O_YbIFqtEe2qg-kYolqCnw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_JlwEAVqtEe2qg-kYolqCnw" predecessor_AbstractAction="_O_YbIFqtEe2qg-kYolqCnw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_O_YbIFqtEe2qg-kYolqCnw" entityName="TaxAction" predecessor_AbstractAction="_JlwEAFqtEe2qg-kYolqCnw" successor_AbstractAction="_JlwEAVqtEe2qg-kYolqCnw">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_7w2CUFqvEe2qg-kYolqCnw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@4"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_7w2CUVqvEe2qg-kYolqCnw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="rule.pddc#_WKZPQBcgEe2S64bq59AiXg-characteristicTypes@4"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="tax"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="tax"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
   </components__Repository>
   <interfaces__Repository xsi:type="repository:OperationInterface" id="_eaD00BcfEe2S64bq59AiXg" entityName="Custom">
     <signatures__OperationInterface id="_hoijABcfEe2S64bq59AiXg" entityName="virtualInspection">
@@ -61,6 +80,12 @@
     </signatures__OperationInterface>
     <signatures__OperationInterface id="_iDy7oBcfEe2S64bq59AiXg" entityName="physicalInspection">
       <parameters__OperationSignature dataType__Parameter="_nwCswBcfEe2S64bq59AiXg" parameterName="con"/>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_3vqzQFqsEe2qg-kYolqCnw" entityName="checkTax">
+      <parameters__OperationSignature parameterName="tax">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+      </parameters__OperationSignature>
       <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
     </signatures__OperationInterface>
   </interfaces__Repository>

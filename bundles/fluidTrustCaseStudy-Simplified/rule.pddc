@@ -26,3 +26,4 @@ enumCharacteristicType Destination using Countries
 enumCharacteristicType Userroles using Roles
 enumCharacteristicType IncidentRates using Levels
 enumCharacteristicType DangerousType using Goods
+enumCharacteristicType TaxDifferation using Levels
